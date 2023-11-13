@@ -36,15 +36,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://oishii.com/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Oishii.com  Home page
+  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/e2c1b932-c5ea-4f88-8388-d80d5b69fcad)
+
+  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/b17f72de-ef48-452c-84d8-afdd74717d7d)
+
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Oishii Recipes page
+  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/4216e850-c4fd-4b44-b9de-f1392305b5f5)
+
+  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/b2a5c2f8-4a8f-40a1-86f5-342000622c29)
+
  
 </details>
 
