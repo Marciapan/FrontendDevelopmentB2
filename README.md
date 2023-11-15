@@ -36,20 +36,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  https://oishii.com/
+  https://www.stardewvalley.net/
+  en
+  https://www.stardewvalley.net/press/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Oishii.com  Home page
-  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/e2c1b932-c5ea-4f88-8388-d80d5b69fcad)
+  Stardew Valley - Home
 
-  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/b17f72de-ef48-452c-84d8-afdd74717d7d)
+  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/ae9b4133-5236-4cb4-8ea1-0772c2f42da0)
+
+  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/28976eeb-1217-4636-a4c8-4901cfe7e9ff)
 
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Oishii Recipes page
-  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/4216e850-c4fd-4b44-b9de-f1392305b5f5)
+  Stardew Valley - Media
 
-  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/b2a5c2f8-4a8f-40a1-86f5-342000622c29)
+  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/8b007419-b11d-4a84-bc12-8073fc2bb1be)
+
+  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/dcbd68a8-3455-471b-9da3-c2ae98f9fb84)
+
 
  
 </details>
@@ -59,7 +64,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
-  <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
+  <summary> Screenreader:</summary>
+  Home page:
+  - Alle socials hebben geen alt (behalve discord)
+  - Lastig te onderscheiden wat tekst en wat HTML semantics is
+  - Alle foto's hebben dezelfde alt
+  - De kringeltjes om de pagina op te breken zijn tekst... dus worden hardop voorgelezen
+  - Alle PG warnings hebben geen alt
+
+  Media:
+  -Youtube links hebben geen alt
+  - Youtube links hebben veel interne knoppen in de player, kan niet gelijk door
+  - Skipt af en toe tekst tussen video's
+  - Geen alts op foto's
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
