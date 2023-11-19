@@ -40,6 +40,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   en
   https://www.stardewvalley.net/press/
 
+<details open>
+  <summary>Foto's van de pagina's</summary>
+  
   #### Screenshot(s) van de eerste pagina (small screen): 
   Stardew Valley - Home
 
@@ -55,7 +58,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/dcbd68a8-3455-471b-9da3-c2ae98f9fb84)
 
-
+</details>
  
 </details>
 
@@ -65,6 +68,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary> Screenreader:</summary>
+  
   Home page:
   - Alle socials hebben geen alt (behalve discord)
   - Lastig te onderscheiden wat tekst en wat HTML semantics is
@@ -73,7 +77,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Alle PG warnings hebben geen alt
 
   Media:
-  -Youtube links hebben geen alt
+  - Youtube links hebben geen alt
   - Youtube links hebben veel interne knoppen in de player, kan niet gelijk door
   - Skipt af en toe tekst tussen video's
   - Geen alts op foto's
@@ -91,14 +95,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
+  ![breakdown sketch Stardew Valley](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/073de5a9-a0be-4efa-bb80-84b66ba4ba9b)
+  
 </details>
 
 
