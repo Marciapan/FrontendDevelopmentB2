@@ -1,31 +1,38 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
-
-
-
-
 
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-background: #eee;
 }
-
-
-
 
 
 /****************/
 /* JOUW STYLING */
 /****************/
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: lightskyblue;
+}
 
-/* jouw code */
+span{
+	color: #ff6633;
+	font-weight: 700;
+}
 
+p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+}
