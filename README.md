@@ -36,27 +36,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  https://www.stardewvalley.net/
+  https://zelda.nintendo.com/
   en
-  https://www.stardewvalley.net/press/
+  https://zelda.nintendo.com/about/
 
 <details open>
   <summary>Foto's van de pagina's</summary>
   
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Stardew Valley - Home
+  Nintendo Zelda - Home
 
-  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/ae9b4133-5236-4cb4-8ea1-0772c2f42da0)
-
-  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/28976eeb-1217-4636-a4c8-4901cfe7e9ff)
+![screencapture-zelda-nintendo-2023-11-27-12_20_21](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/c3d0f7f4-626a-4172-b3d0-279067e1913f)
 
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Stardew Valley - Media
+  Nintendo Zelda - About
+  
+![screencapture-zelda-nintendo-about-2023-11-27-12_20_56](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/34e21c12-4fd4-4e4f-b78f-705c3cb89d67)
 
-  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/8b007419-b11d-4a84-bc12-8073fc2bb1be)
-
-  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/dcbd68a8-3455-471b-9da3-c2ae98f9fb84)
 
 </details>
  
@@ -95,7 +92,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  ![breakdown sketch Stardew Valley](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/073de5a9-a0be-4efa-bb80-84b66ba4ba9b)
+  
   
 </details>
 
