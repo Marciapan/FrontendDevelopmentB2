@@ -20,3 +20,70 @@
 /****************/
 /* JOUW STYLING */
 /****************/
+
+body{
+	margin: 0;
+}
+
+nav{
+	position: sticky;
+	top: 0px;
+}
+
+h2{
+	margin: 0;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	text-align: center;
+}
+
+.red{
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	color: white;
+	background-color: red;
+}
+
+.reduceMotion{
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	color:#b99658;
+	background-color: black;
+}
+
+.menu{
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	color: white;
+	background-color: black;
+	opacity: 0.5;
+	   
+}
+
+.menuSticky{
+	position:fixed;
+	top: 0;
+	width: 100%;
+}
+
+.horLine{
+	/* horLine zit nu midden door de tekst, dit moet ik fixen */
+	height: 1px;
+    background: linear-gradient(to right, #000 0%, #EEC965 50%, #000 100%);
+    position: absolute;
+    left: 0;
+    width: 100%;
+	z-index: 1;
+}
