@@ -12,7 +12,18 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	--color-text: #111;
+	/* for icons, horlines and other details */
+	--detail-color: #b99658;
+	/* text color */
+	--primary-text-colour: #F4EFE5;
+	--secondary-text-color: #7DA1A5;
+	--card-title-color: #42736e;
+	--card-text-color: #4a4a4a;
+	/* button color (background is same as --detail-color */
+	--button-text: #032c2d;
+
+
+
 	--color-background: #eee;
 }
 
@@ -21,20 +32,27 @@
 /* JOUW STYLING */
 /****************/
 
-body{
+body {
 	margin: 0;
+	background-image: url("../images/pattern-triforce-2x.png"), linear-gradient(to bottom, #023326 0%, #053335 50%, #0a1928 100%), url("../images/zelda_site_home/zelda-portal-hero-small.jpg");
+	background-position: center center;
+    background-repeat: repeat, no-repeat;
+    background-size: 2.5rem, cover;
+    height: auto;
+    min-height: 100%;
+	color: var(--primary-text-colour);
 }
 
-nav{
+nav {
 	position: sticky;
 	top: 0px;
 }
 
-h2{
+h2 {
 	margin: 0;
 }
 
-section{
+section {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -43,7 +61,11 @@ section{
 	text-align: center;
 }
 
-.red{
+img {
+	height: 24px;
+}
+
+.red {
 	display: inline-flex;
 	justify-content: space-around;
 	align-items: center;
@@ -52,38 +74,49 @@ section{
 	background-color: red;
 }
 
-.reduceMotion{
-	display: inline-flex;
-	justify-content: space-around;
+.account {
+	display: flex;
 	align-items: center;
-	width: 100%;
-	color:#b99658;
-	background-color: black;
+	fill: var(--detail-color);
 }
 
-.menu{
+.reduceMotion {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	color: var(--detail-color);
+	background-color: black;
+	/* gives the div a border at the bottom */
+	border-bottom: 2px solid transparent;
+	border-image: linear-gradient(to right, #000 0%, var(--detail-color) 50%, #000 100%);
+	border-image-slice: 1;
+}
+
+.menu {
 	display: inline-flex;
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
 	color: white;
-	background-color: black;
-	opacity: 0.5;
-	   
+	background-color: rgba(0, 0, 0, 0.5);
+	border-bottom: 2px solid transparent;
+	border-image: linear-gradient(to right, #000 0%, var(--detail-color) 50%, #000 100%);
+	border-image-slice: 1;
 }
 
-.menuSticky{
-	position:fixed;
+.menuSticky {
+	position: fixed;
 	top: 0;
 	width: 100%;
 }
 
-.horLine{
-	/* horLine zit nu midden door de tekst, dit moet ik fixen */
+/* not used rn, but might be usefull to have later on */
+.horLine {
 	height: 1px;
-    background: linear-gradient(to right, #000 0%, #EEC965 50%, #000 100%);
-    position: absolute;
-    left: 0;
-    width: 100%;
+	background: linear-gradient(to right, #000 0%, var(--detail-color) 50%, #000 100%);
+	position: absolute;
+	left: 0;
+	width: 100%;
 	z-index: 1;
 }
