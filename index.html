@@ -12,13 +12,6 @@
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
-<!-- research fonts!! what size and where!! -->
-<!-- Helvetica Neue: Login/sign up 
-	Roboto Open Sans: Reduce motion 
-	Bitter serif: The official home of
-	mueso sans: Link and friends on nintendo play (de tekst in de articles)-->
-
-
 <body>
 	<div class="background">
 		<div class="red">
@@ -35,7 +28,8 @@
 		</div>
 		<nav>
 			<div class="menu">
-				<img src="../FrontendDevelopmentB2/images/zelda_site_home/logo-loz.png" alt="The logo for The legend of Zelda" class="menuImg">
+				<img src="../FrontendDevelopmentB2/images/zelda_site_home/logo-loz.png"
+					alt="The logo for The legend of Zelda" class="menuImg">
 				<img src="./images/burger.svg" alt="Burger menu, clickable" class="icon">
 
 			</div>
@@ -44,15 +38,19 @@
 			<!-- continue with zelda logo and text -->
 			<h3>Official home of</h3>
 			<img src="./images/zelda_site_home/logo-loz.png" alt="The logo for The legend of Zelda" class="logo">
-			<p>Journey to the kingdom of Hyrule and discover the timeless battles between good and evil and the secrets
-				of the all-powerfull Triforce.</p>
+			<p><i>
+					Journey to the kingdom of Hyrule and discover the timeless battles between good and evil and the
+					secrets
+					of the all-powerfull Triforce.
+				</i></p>
 		</section>
 		<section>
 			<ul>
-				<!-- fix spans and text -->
-				<li>Discover <span>the legend</span></li>
-				<li>Explore <span>the history</span></li>
-				<li>View <span>the glossary</span></li>
+				<!-- fix br, span and text -->
+				<li>Discover <br> <span class="uppercase">the legend</span></li>
+				<li>Explore <br> <span class="uppercase">the history</span></li>
+				<li>View <br> <span class="uppercase">the glossary</span></li>
+				<!-- also fix ::after, needs to go up a lil -->
 			</ul>
 		</section>
 
@@ -62,7 +60,7 @@
 	</div>
 
 	<section>
-		<p>Video of link n shiz</p>
+		<img src="./images/zelda_site_home/totk_microsite_officialtrailer3_1304xj47am.png" alt="Video for the legend of Zelda: Tears of the Kingdom" class="video">
 		<p>The legend of Zelda: Tears of the Kingdom drops for Nintendo Switch on May 12, 2023.</p>
 		<button>Learn more</button>
 	</section>
@@ -72,43 +70,38 @@
 	<section class="featprod">
 		<h3>Featured products</h3>
 		<article>
-			<!-- make image -->
-			<p>Image</p>
+			<img src="./images/zelda_site_home/skyward-sword.jpg" alt="Picture of the game Skyward Sword HD" class="articleImg">
 			<h4>Nintendo Switch</h4>
 			<h3>The legend of Zelda: Skyward Sword HD</h3>
 			<button>Learn more</button>
 		</article>
 		<article>
-			<!-- make image -->
-			<p>Image</p>
+			<img src="./images/zelda_site_home/354x198_ZeldaBreathofWild_v01.jpg" alt="Picture of the game Breath of the Wild" class="articleImg">
 			<h4>Nintendo Switch</h4>
 			<h3>The legend of Zelda: Breath of the Wild</h3>
 			<button>Learn more</button>
 		</article>
 		<article>
-			<!-- make image -->
+			<img src="./images/zelda_site_home/354x198_LA_GameStoreQuarter_v01.jpg" alt="Picture of the game Link's awakening" class="articleImg">
 			<p>Image</p>
 			<h4>Nintendo Switch</h4>
 			<h3>The legend of Zelda: Link's Awakening</h3>
 			<button>Learn more</button>
 		</article>
 		<article>
-			<!-- make image -->
-			<p>Image</p>
+			<img src="./images/zelda_site_home/aoc.jpg" alt="Picture of the game Age of Calamity" class="articleImg">
 			<h4>Nintendo Switch</h4>
 			<h3>Hyrule Warriors: Age of Calamity</h3>
 			<button>Learn more</button>
 		</article>
 		<article>
-			<!-- make image -->
-			<p>Image</p>
+			<img src="./images/zelda_site_home/hyrule-definitive.jpg" alt="Picture of the game Hyrule Warriors: Definitive Edition" class="articleImg">
 			<h4>Nintendo Switch</h4>
 			<h3>Hyrule Warriors: Definitive Edition</h3>
 			<button>Learn more</button>
 		</article>
 		<article>
-			<!-- make image -->
-			<p>Image</p>
+			<img src="./images/zelda_site_home/game-and-watch.jpg" alt="Picture of The Legend of Zelda on the Game & Watch" class="articleImg">
 			<h4>Game & Watch</h4>
 			<h3>Game & Watch(tm): The Legend of Zelda(tm)</h3>
 			<button>Learn more</button>
@@ -116,25 +109,77 @@
 	</section>
 
 	<section class="amiibo">
+		<h3 class="amiiboText">Featured Amiibo</h3>
 		<article>
-			<p>Picture of amiibo</p>
+			<img src="./images/zelda_site_home/amiibo_urbosa.png" alt="Photo of the Urbosa Amiibo" class="amiiboImg">
 			<p>Urbosa</p>
 		</article>
 		<article>
-			<p>Picture of amiibo</p>
+			<img src="./images/zelda_site_home/amiibo_ravali.png" alt="Photo of the Urbosa Amiibo" class="amiiboImg">
 			<p>Revali</p>
 		</article>
 		<article>
-			<p>Picture of amiibo</p>
+			<img src="./images/zelda_site_home/amiibo_mipha.png" alt="Photo of the Mipha Amiibo" class="amiiboImg">
 			<p>Mipha</p>
 		</article>
 		<article>
-			<p>Picture of amiibo</p>
+			<img src="./images/zelda_site_home/amiibo_daruk.png" alt="Photo of the Daruk Amiibo" class="amiiboImg">
 			<p>Daruk</p>
+		</article>
+		<button class="amiiboText">View all Amiibo</button>
+	</section>
+	<section>
+		<h3>Latest News</h3>
+		<article>
+			<img>
+			<h4>04-08-2023</h4>
+			<h3>icon elements inspired by The Legend of Zelda: Tears of the Kingdom game are here for a limited time!</h3>
+			<p>Time to refresh your user icon? Redeem your My Nintendo (tm) Platinum Points* for exclusive...</p>
+			<button>Read more</button>
+		</article>
+		<article>
+			<img>
+			<h4>20-06-2023</h4>
+			<h3>Get weird with your Fuse combos in The Legend of Zelda: Tears of the Kingdom!</h3>
+			<p>In the Legend of Zelda (tm): Tears of the Kingdom game, fusing materials to your weapons an...</p>
+			<button>Read more</button>
+		</article>
+		<article>
+			<img>
+			<h4>30-05-2023</h4>
+			<h3>The Legend of Zelda: Tears of the Kingdom: Hit the ground running with some surface-level tips</h3>
+			<p>We're back with some more tips for the Legend of Zelda (tm): Tears of the Kingdom game! Onc...</p>
+			<button>Read more</button>
+		</article>
+		<button>View more news</button>
+	</section>
+<!-- link and zelda pics -->
+<!-- this part has the background and also the moving trianges before and after -->
+	<section>
+		<p>Link & zelda pics</p>
+		<h3>Link and friends on Play Nintendo</h3>
+		<article>
+			<img>
+			<p>icon in middle</p>
+			<h3>We're cooking!</h3> 
+			<p>You can download and print DIY recipe cards inspired by the Legend of Zelda: Tears of the Kingdom game.</p> 
+		</article>
+		<article>
+			<img>
+			<p>icon in middle</p>
+			<h3>Explorer's Journal</h3> 
+			<p>You can create a customized Explorer's Journal inspired by the game!</p> 
+		</article>
+		<!-- this article has the pic and text backwards? change or keep it the same as rest? -->
+		<article>
+			<img>
+			<p>icon in middle</p>
+			<h3>Brrrr!</h3> 
+			<p>5 ways to fight the cold in the Legend of Zelda: Tears of the Kingdom game.</p> 
 		</article>
 	</section>
 
-
+	<!-- footer and Follow The Legend etc to come -->
 
 	<script defer src="scripts/script.js"></script>
 </body>

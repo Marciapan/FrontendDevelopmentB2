@@ -52,7 +52,7 @@ nav {
 }
 
 h2 {
-	margin: 100;
+	margin: 0;
 }
 
 p{
@@ -66,6 +66,41 @@ section {
 	align-items: center;
 	width: 100%;
 	text-align: center;
+}
+
+ul{
+	padding: 0;
+}
+
+li{
+	list-style-type: none;
+	padding: 1em;
+}
+
+li::before{
+	content: "";
+	background: url('../images/zelda_site_home/button_decoration_left.png');
+	width: 2.6em;
+	height: 3.4em;
+	position: absolute;
+	left: 20%;
+}
+
+li::after{
+	content: "";
+	background: url('../images/zelda_site_home/button_decoration_right.png');
+	width: 2.6em;
+	height: 3.4em;
+	position: absolute;
+	right: 20%;
+}
+
+.articleImg{
+	width: 100%;
+}
+
+.video{
+	width:100%;
 }
 
 .background{
@@ -130,6 +165,11 @@ section {
 	width: 60%;
 }
 
+.uppercase{
+	text-transform: uppercase;
+	font-size: 1.125rem;
+}
+
 .ruler{
 	background-image: url("../images/zelda_site_home/hyrule_rule.png");
 	background-position-x: center;
@@ -140,9 +180,24 @@ section {
     z-index: 5;
 }
 
+.amiibo{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 2fr 2fr 1fr;
+}
+
+.amiiboImg{
+	width:100%
+}
+
+.amiiboText{
+	grid-column: span 2;
+}
+
+
 /* not used rn, but might be usefull to have later on */
 .horLine {
-	height: 1px;
+	height: 2px;
 	background: linear-gradient(to right, #000 0%, var(--detail-color) 50%, #000 100%);
 	position: absolute;
 	left: 0;
