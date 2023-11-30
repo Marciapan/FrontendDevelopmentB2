@@ -12,6 +12,7 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
+	/* COLOURS */
 	/* for icons, horlines and other details */
 	--detail-color: #b99658;
 	/* text color */
@@ -19,12 +20,14 @@
 	--secondary-text-color: #7DA1A5;
 	--card-title-color: #42736e;
 	--card-text-color: #4a4a4a;
-	/* button color (background is same as --detail-color */
+	/* button color (background of button is same as --detail-color */
 	--button-text: #032c2d;
 
-
-
-	--color-background: #eee;
+	/* FONTS */
+	--main-font: 'bitter', serif;
+	--secondary-font: 'Helvetica Neue';
+	--tertiary-font: 'Roboto';
+	--quaternary-font: 'mueso sans';
 }
 
 
@@ -34,12 +37,12 @@
 
 body {
 	margin: 0;
-	background-image: url("../images/pattern-triforce-2x.png"), linear-gradient(to bottom, #023326 0%, #053335 50%, #0a1928 100%), url("../images/zelda_site_home/zelda-portal-hero-small.jpg");
+	background-image: url("../images/pattern-triforce-2x.png"), linear-gradient(to bottom, #023326 0%, #053335 50%, #0a1928 100%);
 	background-position: center center;
-    background-repeat: repeat, no-repeat;
-    background-size: 2.5rem, cover;
-    height: auto;
-    min-height: 100%;
+	background-repeat: repeat, no-repeat;
+	background-size: 2.5rem, cover;
+	height: auto;
+	min-height: 100%;
 	color: var(--primary-text-colour);
 }
 
@@ -52,6 +55,10 @@ h2 {
 	margin: 0;
 }
 
+p{
+	font-family: var(--primary-text-colour);
+}
+
 section {
 	display: flex;
 	flex-direction: column;
@@ -61,8 +68,12 @@ section {
 	text-align: center;
 }
 
-img {
-	height: 24px;
+.background{
+	background-image: url("../images/zelda_site_home/zelda-portal-hero-small.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
 }
 
 .red {
@@ -98,6 +109,8 @@ img {
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.5);
 	border-bottom: 2px solid transparent;
@@ -105,10 +118,26 @@ img {
 	border-image-slice: 1;
 }
 
-.menuSticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
+.menuImg{
+	height: 24px;
+}
+
+.icon{
+	height: 20px;
+}
+
+.logo{
+	width: 60%;
+}
+
+.ruler{
+	background-image: url("../images/zelda_site_home/hyrule_rule.png");
+	background-position-x: center;
+	background-position-y: bottom;
+	height: 86px;
+	width:100%;
+	position: relative;
+    z-index: 5;
 }
 
 /* not used rn, but might be usefull to have later on */
