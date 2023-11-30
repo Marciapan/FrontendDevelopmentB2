@@ -106,7 +106,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  De website die ik heb gekozen is niet divers genoeg qua content. Ik heb overlegd met de leraar en we hebben samen een nieuwe website gekozen. Gelukkig was ik nog niet zo heel ver en ging er geen werk verloren.
 
 
   ### Agenda voor meeting
@@ -122,10 +122,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Andere website gekozen
+  - Verder werken aan gekozen website
+  - Kleuren, fonts en assets uitzoeken
 
 </details>
 
