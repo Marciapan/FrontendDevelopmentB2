@@ -14,6 +14,8 @@
 :root {
 	/* COLOURS */
 	/* for icons, horlines and other details */
+	--background-article: #FFF;
+	--background-news: #F4EFE5;
 	--detail-color: #b99658;
 	/* text color */
 	--primary-text-colour: #F4EFE5;
@@ -55,8 +57,9 @@ h2 {
 	margin: 0;
 }
 
-p{
+p {
 	font-family: var(--primary-text-colour);
+	line-height: 1.5em;
 }
 
 section {
@@ -66,18 +69,20 @@ section {
 	align-items: center;
 	width: 100%;
 	text-align: center;
+	padding: 1em;
 }
 
-ul{
+ul {
 	padding: 0;
+	margin: 0;
 }
 
-li{
+li {
 	list-style-type: none;
 	padding: 1em;
 }
 
-li::before{
+li::before {
 	content: "";
 	background: url('../images/zelda_site_home/button_decoration_left.png');
 	width: 2.6em;
@@ -86,24 +91,45 @@ li::before{
 	left: 20%;
 }
 
-li::after{
+li::after {
 	content: "";
 	background: url('../images/zelda_site_home/button_decoration_right.png');
 	width: 2.6em;
 	height: 3.4em;
 	position: absolute;
 	right: 20%;
+	transform: translate(0, -1em);
 }
 
-.articleImg{
+p {
+	font-size: 1.125rem;
+	line-height: 1.6em;
+	padding: 0 1em;
+}
+
+time{
+	font-family: var(--main-font);
+	color: var(--detail-color);
+	font-style: italic;
+}
+
+.articleImg {
 	width: 100%;
 }
 
-.video{
-	width:100%;
+.video {
+	width: 100%;
+	border: 2px var(--detail-color) solid;
 }
 
-.background{
+.videoSection {
+	padding: 1em;
+	font-family: var(--main-font);
+	color: var(--primary-text-colour);
+	font-size: 1.125rem;
+}
+
+.background {
 	background-image: url("../images/zelda_site_home/zelda-portal-hero-small.jpg");
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -111,25 +137,43 @@ li::after{
 	height: auto;
 }
 
+.backgroundAbout{
+	background-image: url("../images/zeldaAbout/header-about.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
+}
+
 .red {
-	display: inline-flex;
+	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	flex-direction: row;
 	width: 100%;
-	color: white;
+	color: var(--background-article);
 	background-color: red;
+	padding: 0;
 }
 
 .account {
 	display: flex;
 	align-items: center;
 	fill: var(--detail-color);
+	padding: 0;
+}
+
+.loginText{
+	font-family: var(--secondary-font);
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 .reduceMotion {
-	display: inline-flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: row;
 	width: 100%;
 	color: var(--detail-color);
 	background-color: black;
@@ -137,15 +181,19 @@ li::after{
 	border-bottom: 2px solid transparent;
 	border-image: linear-gradient(to right, #000 0%, var(--detail-color) 50%, #000 100%);
 	border-image-slice: 1;
+	padding: 0;
 }
 
 .menu {
-	display: inline-flex;
-	justify-content: space-around;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 	padding-top: 1%;
 	padding-bottom: 1%;
+	padding-left: 3%;
+	padding-right: 3%;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.5);
 	border-bottom: 2px solid transparent;
@@ -153,49 +201,173 @@ li::after{
 	border-image-slice: 1;
 }
 
-.menuImg{
-	height: 24px;
+.sticky {
+	position: fixed;
+	top: 0;
 }
 
-.icon{
-	height: 20px;
+.menuImg {
+	height: 1.5em;
 }
 
-.logo{
+.icon {
+	height: 1.2em;
+}
+
+.logo {
 	width: 60%;
 }
 
-.uppercase{
+.uppercase {
 	text-transform: uppercase;
 	font-size: 1.125rem;
 }
 
-.ruler{
+.ruler {
 	background-image: url("../images/zelda_site_home/hyrule_rule.png");
 	background-position-x: center;
 	background-position-y: bottom;
-	height: 86px;
-	width:100%;
+	height: 5.4em;
+	width: 100%;
 	position: relative;
-    z-index: 5;
+	z-index: 5;
+	transform: translate(0, 3em);
+	margin-bottom: 4em;
 }
 
-.amiibo{
+.fancyButton {
+	display: block;
+	border: none;
+	border-top: 4px var(--detail-color) solid;
+	border-bottom: 4px var(--detail-color) solid;
+	width: 70%;
+	background-color: transparent;
+	color: var(--primary-text-colour);
+	padding: 0.5em 0;
+	font-family: var(--tertiary-font);
+	font-size: 1.125rem;
+}
+
+.fancyButton::before {
+	content: "";
+	background: url('../images/zelda_site_home/cta_button_left.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 1.85em;
+	height: 4em;
+	position: absolute;
+	left: 20%;
+	transform: translate(-36px, -13px);
+}
+
+.fancyButton::after {
+	content: "";
+    background: url("../images/zelda_site_home/cta_button_right.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.85em;
+    height: 4em;
+    position: absolute;
+    right: 4%;
+    transform: translate(-21px, -13px);
+}
+
+.amiibo {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 2fr 2fr 1fr;
+	grid-template-rows: 1fr 2fr 2fr;
 }
 
-.amiiboImg{
-	width:100%
+.amiiboImg {
+	width: 90%;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
-.amiiboText{
+.amiiboText {
 	grid-column: span 2;
 }
 
+.featProd {
+	padding-left: 8%;
+	padding-right: 8%;
+}
 
-/* not used rn, but might be usefull to have later on */
+.articleProd {
+	background-color: var(--background-article);
+	margin-bottom: 5%;
+	padding: 0.5em;
+	text-align: left;
+}
+
+.consoleTag {
+	color: var(--detail-color);
+	font-family: var(--tertiary-font);
+	font-size: 0.875rem;
+	margin-bottom: 0;
+	margin-top: 0.5em;
+}
+
+.gameTitle {
+	color: var(--card-title-color);
+	font-family: var(--main-font);
+	font-weight: bold;
+	font-size: 1.125em;
+	margin-top: 0.5em;
+}
+
+.articleButton {
+	display: block;
+	color: var(--button-text);
+	background-color: var(--detail-color);
+	font-family: var(--main-font);
+	font-weight: bold;
+	font-size: 1.125em;
+	border: none;
+	width: 100%;
+	height: 2.4em;
+	cursor: pointer;
+	outline: none;
+	
+}
+
+.newsArticle{
+	background-color: var(--background-news);
+    margin-bottom: 5%;
+    padding: 0.5em;
+    text-align: left;
+}
+
+.newsTitle{
+	color: var(--card-title-color);
+	font-family: var(--main-font);
+	font-size: 1.125em;
+	font-weight: bold;
+	margin: 0;
+}
+
+.newsText{
+	color:var(--card-text-color);
+	font-family: var(--main-font);
+	font-size: 0.9rem;
+	margin: 0;
+	padding:0;
+}
+
+.newsButton{
+	display: block;
+	color: var(--button-text);
+	background-color: var(--detail-color);
+	font-family: var(--main-font);
+	font-weight: bold;
+	font-size: 1.125em;
+	border: none;
+	width: 100%;
+	height: 2.4em;
+	cursor: pointer;
+	outline: none;
+	
+}
+
 .horLine {
 	height: 2px;
 	background: linear-gradient(to right, #000 0%, var(--detail-color) 50%, #000 100%);
