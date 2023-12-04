@@ -33,33 +33,40 @@
                 <img src="./images/burger.svg" alt="Burger menu, clickable" class="icon">
             </section>
             <section class="official">
-                <h3>Official home of</h3>
+                <h3 class="officialHome">Official home of</h3>
                 <img src="./images/zelda_site_home/logo-loz.png" alt="The logo for The legend of Zelda" class="logo">
                 <p>Discover the Legend</p>
             </section>
 
             <div class="ruler"></div>
-            <div class="horLine"></div>
 
         </nav>
     </header>
     <main>
         <section>
+            <!-- fix the overflow... somehow -->
+            <!-- <div class="gateBackground"> -->
+            <div>
+                <img src="./images/zeldaAbout/TLoZ_Series_Gate_of_Time_Symbol.png">
+            </div>
             <h3>The creation</h3>
             <p>According to ancient tales, the world was created by three goddesses:</p>
             <ul>
                 <li>
-                    <img>
-                    <h3>D</h3>
+                    <img src="./images/zeldaAbout/symbol-din.png" alt="The symbol of Din, goddess of power."
+                        class="symbol">
+                    <h3>Din</h3>
                     <p>The goddess of power created the land.</p>
                 </li>
                 <li>
-                    <img>
+                    <img src="./images/zeldaAbout/symbol-nayru.png" alt="The symbol of Nayru, goddess of wisdom."
+                        class="symbol">
                     <h3>Nayru</h3>
                     <p>The goddess of wisdom created order.</p>
                 </li>
                 <li>
-                    <img>
+                    <img src="./images/zeldaAbout/symbol-farore.png" alt="The symbol of Farore, goddess of courage."
+                        class="symbol">
                     <h3>Farore</h3>
                     <p>The goddess of courage created life.</p>
                 </li>
@@ -74,12 +81,10 @@
                 Only by reuniting all three pieces van the true power of the Triforce be obtained.
             </p>
             <p>Throughout time, the Triforce has chosen a select few to wield its individual powers:</p>
-            <img>
-            <!-- of ganon, link or zelda -->
+            <img src="./images/zeldaAbout/Ganon-2x.png" alt="The demon king, Ganon" class="characterPortrait">
             <p>Ganondorf as seen in: The Legend of Zelda: Twilight Princess</p>
             <h3>Triforce of <span>Power</span></h3>
-            <img>
-            <!-- triforce dingies -->
+            <img src="./images/zeldaAbout/triforce-power-sprite.png" alt="The Triforce of Power">
             <p>Ganondorf, the dark lord who seeks to overthrow Hyrule, possesses the Triforce of Power.</p>
         </section>
 
@@ -99,38 +104,55 @@
             <h3>Glossary</h3>
             <button>Characters</button>
             <button>Items</button>
+            <div class="portraits">
+                <img src="./images/zeldaAbout/portal-characters-link-off.png" alt="Portrait of Link">
+                <img src="./images/zeldaAbout/portal-characters-zelda-off.png" alt="Portrait of Zelda">
+                <img src="./images/zeldaAbout/portal-characters-ganon-off.png" alt="Portrait of Ganon">
+                <img src="./images/zeldaAbout/portal-characters-ganondorf-off.png"
+                    alt="Portrait of Ganondorf in beast form">
+                <img src="./images/zeldaAbout/portal-characters-impa-off.png" alt="Portrait of Impa">
+                <img src="./images/zeldaAbout/portal-characters-deku-off.png" alt="Portrait of the Deku scrubs">
+                <img src="./images/zeldaAbout/portal-characters-sheikah-off.png" alt="Portrait of Sheik">
+                <img src="./images/zeldaAbout/portal-characters-goron-off.png" alt="Portrait of a goron">
+                <img src="./images/zeldaAbout/portal-characters-zora-off.png" alt="Portrait of a zora">
+                <img src="./images/zeldaAbout/portal-characters-kokiri-off.png" alt="Portrait of a kokiri">
+                <img src="./images/zeldaAbout/portal-characters-koroks-off.png" alt="Portrait of the koroks">
+                <img src="./images/zeldaAbout/portal-characters-gerudo-off.png" alt="Portrait of a gerudo">
+                <img src="./images/zeldaAbout/portal-characters-midna-off.png" alt="Portrait of Midna">
+                <img src="./images/zeldaAbout/portal-characters-great-fairy-off.png" alt="Portrait of the great fairy">
+                <img src="./images/zeldaAbout/portal-characters-rito-off.png" alt="Portrait of a rito">
+                <img src="./images/zeldaAbout/portal-characters-tingle-off.png" alt="Portrait of Tingle">
+                <img src="./images/zeldaAbout/portal-characters-kaepora-gaebora-off.png"
+                    alt="Portrait of Kaepora Gaebora">
+                <img src="./images/zeldaAbout/portal-characters-king-of-hyrule-off.png"
+                    alt="Portrait of the king of Hyrule">
+            </div>
 
-            <img>
-            <!-- times 20 or smth smh -->
         </section>
 
     </main>
     <footer>
+        <div class="horLine"></div>
         <section>
-            <!-- This section has a different background -->
-            <p>Follow the Legend of Zelda on Facebook</p>
-            <!-- make facebook underlined & a link -->
-        </section>
-        <section>
-            <!-- background = black here -->
-            <button>Share this site:</button>
-            <button>Customer Support</button>
-            <img>
-            <p>amiibo button</p>
-            <p>Follow Nintendo</p>
-            <div>
-                <p>facebook button</p>
-                <p>twitter button</p>
-                <p>youtube button</p>
-                <p>instagram button</p>
+            <button class="coolButton">Share this site:</button>
+            <button class="coolButton">Customer Support</button>
+            <img src="./images/logo-amiibo.svg">
+            <p>Follow Nintendo:</p>
+            <div class="logos">
+                <img src="./images/logo-facebook.svg">
+                <img src="./images/logo-twitter.svg">
+                <img src="./images/logo-youtube.svg">
+                <img src="./images/logo-instagram.svg">
             </div>
-            <div>
-                <p>Rating img and certified dingy</p>
+            <div class="certificates">
+                <img src="./images/en-e-t.svg">
+                <img src="./images/logo-esrb-privacy-certified.svg">
             </div>
-            <ul>
-                <li>Privacy Policy</li>
-                <li>Terms of Use</li>
-                <li>Cookie Preferences</li>
+
+            <ul class="linkList">
+                <li class="linkItem">Privacy Policy</li>
+                <li class="linkItem">Terms of Use</li>
+                <li class="linkItem">Cookie Preferences</li>
             </ul>
 
             <h5>© Nintendo. The Legend of Zelda and Nintendo Switch are trademarks of Nintendo.</h5>

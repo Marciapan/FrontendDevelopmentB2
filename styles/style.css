@@ -62,6 +62,10 @@ p {
 	line-height: 1.5em;
 }
 
+img {
+	overflow: hidden;
+}
+
 section {
 	display: flex;
 	flex-direction: column;
@@ -70,19 +74,74 @@ section {
 	width: 100%;
 	text-align: center;
 	padding: 1em;
+	overflow: hidden;
 }
 
-ul {
+p {
+	font-size: 1.125rem;
+	line-height: 1.6em;
+	padding: 0 1em;
+}
+
+time {
+	font-family: var(--main-font);
+	color: var(--detail-color);
+	font-style: italic;
+}
+
+footer {
+	background-color: black;
+
+}
+
+.logos {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.logos img {
+	width: 15%;
+	margin: 0.5em;
+	border-radius: 0.5em;
+}
+
+.certificates {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	width: auto;
+	height: 7em;
+}
+
+.certificates img {
+	width: 100%;
+	margin: 0.5em;
+	border-radius: 0.5em;
+}
+
+.decoratedList {
 	padding: 0;
 	margin: 0;
 }
 
-li {
+.decoratedItem {
 	list-style-type: none;
 	padding: 1em;
 }
 
-li::before {
+.linkList {
+	padding: 0;
+	margin: 0;
+	margin-top: 1em;
+}
+
+.linkItem {
+	list-style-type: none;
+}
+
+.decoratedItem::before {
 	content: "";
 	background: url('../images/zelda_site_home/button_decoration_left.png');
 	width: 2.6em;
@@ -91,7 +150,7 @@ li::before {
 	left: 20%;
 }
 
-li::after {
+.decoratedItem::after {
 	content: "";
 	background: url('../images/zelda_site_home/button_decoration_right.png');
 	width: 2.6em;
@@ -101,16 +160,48 @@ li::after {
 	transform: translate(0, -1em);
 }
 
-p {
-	font-size: 1.125rem;
-	line-height: 1.6em;
-	padding: 0 1em;
+.gateBackground {
+	z-index: -1;
+	animation: spinning 60s infinite;
+	animation-timing-function: linear;
+	position: absolute;
+	top: 0;
+	overflow-x: hidden;
+
 }
 
-time{
+.symbol {
+	width: 100%;
+}
+
+.characterPortrait {
+	width: 100%;
+}
+
+.officialHome {
+	color: var(--primary-text-colour);
 	font-family: var(--main-font);
-	color: var(--detail-color);
-	font-style: italic;
+	font-size: 0.8rem;
+}
+
+.officialHome::before {
+	background-image: url("../images/zeldaAbout/sword_decorator.png");
+	background-repeat: no-repeat;
+	transform: rotate(180deg) translate(2em);
+	width: 2em;
+	height: 1em;
+	content: "";
+	position: absolute;
+}
+
+.officialHome::after {
+	background-image: url("../images/zeldaAbout/sword_decorator.png");
+	background-repeat: no-repeat;
+	transform: translate(0.6em, -0.1em);
+	width: 2em;
+	height: 1em;
+	content: "";
+	position: absolute;
 }
 
 .articleImg {
@@ -137,8 +228,8 @@ time{
 	height: auto;
 }
 
-.backgroundAbout{
-	background-image: url("../images/zeldaAbout/header-about.jpg");
+.backgroundAbout {
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../images/zeldaAbout/header-about.jpg");
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -163,7 +254,7 @@ time{
 	padding: 0;
 }
 
-.loginText{
+.loginText {
 	font-family: var(--secondary-font);
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
@@ -262,14 +353,28 @@ time{
 
 .fancyButton::after {
 	content: "";
-    background: url("../images/zelda_site_home/cta_button_right.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 1.85em;
-    height: 4em;
-    position: absolute;
-    right: 4%;
-    transform: translate(-21px, -13px);
+	background: url("../images/zelda_site_home/cta_button_right.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 1.85em;
+	height: 4em;
+	position: absolute;
+	right: 4%;
+	transform: translate(-21px, -13px);
+}
+
+.coolButton {
+	display: block;
+	border: none;
+	border: 4px var(--detail-color) solid;
+	width: 70%;
+	background-color: transparent;
+	color: var(--primary-text-colour);
+	padding: 0.5em 0;
+	font-family: var(--tertiary-font);
+	font-size: 1.125rem;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 .amiibo {
@@ -327,17 +432,17 @@ time{
 	height: 2.4em;
 	cursor: pointer;
 	outline: none;
-	
+
 }
 
-.newsArticle{
+.newsArticle {
 	background-color: var(--background-news);
-    margin-bottom: 5%;
-    padding: 0.5em;
-    text-align: left;
+	margin-bottom: 5%;
+	padding: 0.5em;
+	text-align: left;
 }
 
-.newsTitle{
+.newsTitle {
 	color: var(--card-title-color);
 	font-family: var(--main-font);
 	font-size: 1.125em;
@@ -345,15 +450,15 @@ time{
 	margin: 0;
 }
 
-.newsText{
-	color:var(--card-text-color);
+.newsText {
+	color: var(--card-text-color);
 	font-family: var(--main-font);
 	font-size: 0.9rem;
 	margin: 0;
-	padding:0;
+	padding: 0;
 }
 
-.newsButton{
+.newsButton {
 	display: block;
 	color: var(--button-text);
 	background-color: var(--detail-color);
@@ -365,7 +470,7 @@ time{
 	height: 2.4em;
 	cursor: pointer;
 	outline: none;
-	
+
 }
 
 .horLine {
@@ -375,4 +480,36 @@ time{
 	left: 0;
 	width: 100%;
 	z-index: 1;
+}
+
+.facebook {
+	background-image: linear-gradient(to right, #000 0%, #1B2E40 25%, #1B2E40 75%, #000 100%);
+}
+
+.portraits {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(6 1fr);
+	column-gap: 5%;
+	row-gap: 5%;
+	margin-bottom: 4em;
+}
+
+.portraits img {
+	width: 100%;
+}
+
+.portraits img:hover{
+	background-color: var(--detail-color);
+}
+
+@keyframes spinning {
+	from {
+		transform: rotate(0);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+
 }
