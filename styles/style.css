@@ -218,6 +218,7 @@ footer {
 	font-family: var(--main-font);
 	color: var(--primary-text-colour);
 	font-size: 1.125rem;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .background {
@@ -290,6 +291,7 @@ footer {
 	border-bottom: 2px solid transparent;
 	border-image: linear-gradient(to right, #000 0%, var(--detail-color) 50%, #000 100%);
 	border-image-slice: 1;
+	z-index: 5;
 }
 
 .sticky {
@@ -499,8 +501,94 @@ footer {
 	width: 100%;
 }
 
-.portraits img:hover{
+.portraits img:hover {
 	background-color: var(--detail-color);
+}
+
+.link {
+	display: block;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	width: 65%;
+	transform: translate(-2em, 5em);
+}
+
+.zelda {
+	display: block;
+	position: absolute;
+	right: 0;
+	z-index: 2;
+	width: 70%;
+}
+
+.groupPic {
+	padding-bottom: 150%;
+}
+
+.playNintendo {
+	font-family: var(--main-font);
+	color: var(--primary-text-colour);
+	font-size: 1.5em;
+}
+
+.darkgreen {
+	background-color: #7DA1A5;
+	background-image: linear-gradient(to right, #000 0%, #193c38 25%, #193c38 75%, #000 100%);
+	margin-bottom: 8em;
+}
+
+.adCard {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 100%;
+	border: #000 3px;
+	background-color: #e2d267;
+	margin-bottom: 0.5em;
+}
+
+.adCardReverse{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	border: #000 3px;
+	background-color: #e2d267;
+	margin-bottom: 0.5em;
+}
+
+.adCardImage{
+	width: 100%;
+}
+
+.adCardTitle {
+	font-size: 1em;
+	width: 45vw;
+}
+
+.adCardText {
+	font-size: 0.9em;
+	line-height: 1.2;
+	width: 45vw;
+}
+
+#wallpaperCard{
+	background-color: #e2d267;
+	color: var(--button-text);
+}
+
+#recipeCard{
+	background-color: #b42ff5;
+	color: var(--primary-text-colour);
+}
+
+#exploreCard{
+	background-color: #484848;
+	color: var(--background-article);
+}
+
+#holidayCard{
+	background-color: #780000;
+	color: var(--primary-text-colour);
 }
 
 @keyframes spinning {
