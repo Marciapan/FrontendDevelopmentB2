@@ -220,21 +220,66 @@ footer {
 
 .triforceBearers {
 	width: 100%;
-    margin-top: 30em;
+	margin-top: 30em;
 }
 
-.character{
-	width: 100%;
-    display: flex;
+.triforce {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.triforceDown {
+	display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: start;
-    margin: 4em 1em;
 }
 
-.triforceBearers div button{
+.piecePower {
+	background: url(../images/zeldaAbout/triforce/power_inactive.png);
+    border: none;
+    width: 18em;
+    height: 16em;
+}
+
+.pieceWisdom {
+	background: url(../images/zeldaAbout/triforce/wisdom_inactive.png);
+	width: 64vw;
+    height: 56vw;
 	border: none;
-    background-color: transparent;
-    transform: scale(0.5);
+}
+
+.pieceCourage {
+	background: url(../images/zeldaAbout/triforce/courage_inactive.png);
+	width: 64vw;
+    height: 56vw;
+	border: none;
+}
+
+.piecePowerActive {
+	background: url(../images/zeldaAbout/triforce/power_active.png);
+}
+
+.pieceWisdomActive {
+	background: url(../images/zeldaAbout/triforce/wisdom_active.png);
+}
+
+.pieceCourageActive {
+	background: url(../images/zeldaAbout/triforce/courage_active.png);
+}
+
+.character {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	margin: 4em 1em;
+}
+
+.arrows{
+	border: none;
+	background-color: transparent;
+	transform: scale(0.5);
 }
 
 .symbol {
@@ -244,6 +289,7 @@ footer {
 .characterPortrait {
 	width: 100%;
 	transform: scale(2);
+	z-index: -3;
 }
 
 .officialHome {
@@ -559,7 +605,7 @@ footer {
 .portraits {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: repeat(6 1fr);
+	grid-template-rows: repeat(6, 1fr);
 	column-gap: 5%;
 	row-gap: 5%;
 	margin-bottom: 4em;
