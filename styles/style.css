@@ -30,6 +30,7 @@
 	--secondary-font: 'Helvetica Neue';
 	--tertiary-font: 'Roboto';
 	--quaternary-font: 'mueso sans';
+	--glossary-button-font: 'Kadwa', serif;
 }
 
 
@@ -58,12 +59,17 @@ h2 {
 }
 
 p {
-	font-family: var(--primary-text-colour);
+	font-family: var(--main-font);
 	line-height: 1.5em;
 }
 
 img {
 	overflow: hidden;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
 }
 
 section {
@@ -92,6 +98,21 @@ time {
 footer {
 	background-color: black;
 
+}
+
+.discover {
+	font-family: var(--main-font);
+	color: var(--primary-text-colour);
+	font-size: 1.3em;
+	font-weight: 500;
+}
+
+.theLegend {
+	font-family: var(--main-font);
+	color: var(--primary-text-colour);
+	font-size: 1.5em;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .logos {
@@ -161,13 +182,59 @@ footer {
 }
 
 .gateBackground {
-	z-index: -1;
+	z-index: -20;
 	animation: spinning 60s infinite;
 	animation-timing-function: linear;
-	position: absolute;
-	top: 0;
+	position: sticky;
 	overflow-x: hidden;
+}
 
+.up {
+	position: absolute;
+	top: 75%;
+}
+
+.windButton {
+	font-family: var(--main-font);
+	color: var(--primary-text-colour);
+	padding: 0 1em;
+}
+
+.windButton::before {
+	content: "";
+	background: url(../images/zeldaAbout/about_squigle_left.png);
+	width: 1.8em;
+	height: 1.2em;
+	position: absolute;
+	transform: translateX(-1.8em);
+}
+
+.windButton::after {
+	content: "";
+	background: url(../images/zeldaAbout/about_squigle_left.png);
+	width: 1.8em;
+	height: 1.2em;
+	position: absolute;
+	transform: scaleX(-1);
+}
+
+.triforceBearers {
+	width: 100%;
+    margin-top: 30em;
+}
+
+.character{
+	width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: 4em 1em;
+}
+
+.triforceBearers div button{
+	border: none;
+    background-color: transparent;
+    transform: scale(0.5);
 }
 
 .symbol {
@@ -176,6 +243,7 @@ footer {
 
 .characterPortrait {
 	width: 100%;
+	transform: scale(2);
 }
 
 .officialHome {
@@ -547,7 +615,7 @@ footer {
 	margin-bottom: 0.5em;
 }
 
-.adCardReverse{
+.adCardReverse {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
@@ -556,7 +624,7 @@ footer {
 	margin-bottom: 0.5em;
 }
 
-.adCardImage{
+.adCardImage {
 	width: 100%;
 }
 
@@ -571,22 +639,79 @@ footer {
 	width: 45vw;
 }
 
-#wallpaperCard{
+.glossaryButton {
+	font-family: var(--glossary-button-font);
+	font-size: 1.3rem;
+	border: 1px solid #B99658;
+	color: #F4EFE5;
+	padding: 0.5rem 2.5rem;
+	position: relative;
+	margin: 0.3em 1.5rem;
+	margin-top: 0.5rem;
+	max-width: 280px;
+	transition: all 1s ease;
+	width: 80%;
+	background-color: transparent;
+}
+
+.glossaryButton:focus {
+	background-color: rgba(27, 63, 60, 0.9);
+}
+
+.glossaryButton:focus::before {
+	content: "";
+	background: url(../images/zeldaAbout/glossary_icon.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 1.85em;
+	height: 4em;
+	position: absolute;
+	left: 0;
+	transform: translate(-1.5em, -0.5em);
+}
+
+.glossaryButton:focus::after {
+	content: "";
+	background: url(../images/zeldaAbout/glossary_icon_right.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 1.85em;
+	height: 4em;
+	position: absolute;
+	right: 0;
+	transform: translate(1.5em, -0.5em);
+}
+
+.goddesses li h3 {
+	font-family: var(--main-font);
+	color: var(--detail-color);
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.goddesses li p {
+	color: var(--primary-text-colour);
+	font-size: 1.2rem;
+	font-style: italic;
+}
+
+/* ID's */
+#wallpaperCard {
 	background-color: #e2d267;
 	color: var(--button-text);
 }
 
-#recipeCard{
+#recipeCard {
 	background-color: #b42ff5;
 	color: var(--primary-text-colour);
 }
 
-#exploreCard{
+#exploreCard {
 	background-color: #484848;
 	color: var(--background-article);
 }
 
-#holidayCard{
+#holidayCard {
 	background-color: #780000;
 	color: var(--primary-text-colour);
 }

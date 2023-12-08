@@ -1,9 +1,6 @@
 // JavaScript Document
 console.log("hi");
 
-
-// FUCKING STICKY WILT NIET WERKEN WTF WAAROM NIET IK HAAT SCROLL EVENTS 
-
 var navBar = document.querySelector(".menu");
 var stickyNav = navBar.offsetTop;
 
