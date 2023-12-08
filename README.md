@@ -138,11 +138,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  De code is op zich goed, ik maak veel gebruik van classes maar zolang dit goed te onderbouwen is maakt het niet uit.
+  De header moet iets aangepast worden qua structuur, de hele sectie mag "nav" zijn ipv alleen de menubalk.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  samen met je groepje opstellen (doen wij niet
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
@@ -154,10 +155,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Veranderen head -> nav
+  - Letten op classes
+  - Verdergaan met HTML, CSS andere pagina
 
 </details>
 
