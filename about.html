@@ -16,7 +16,8 @@
     <header>
         <nav class="backgroundAbout">
             <section class="red">
-                <img src="./images/nintendo-racetrack.svg" alt="The logo for Nintendo" class="menuImg">
+                <a href="index.html"><img src="./images/nintendo-racetrack.svg" alt="The logo for Nintendo"
+                        class="menuImg"></a>
                 <div class="account">
                     <img src="./images/account-svgrepo-com.svg" alt="Icon for account" class="icon">
                     <p class="loginText">Log in / Sign up</p>
@@ -30,7 +31,14 @@
             <section class="menu">
                 <img src="../FrontendDevelopmentB2/images/zelda_site_home/logo-loz.png"
                     alt="The logo for The legend of Zelda" class="menuImg">
-                <img src="./images/burger.svg" alt="Burger menu, clickable" class="icon">
+                <img src="./images/burger.svg" alt="Burger menu, clickable" class="icon" id="burgermenuIcon">
+            </section>
+            <section class="collapsibleMenu hidden">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>News</li>
+                </ul>
             </section>
             <section class="official">
                 <h3 class="officialHome">Official home of</h3>
@@ -94,8 +102,9 @@
                     <button class="pieceCourage"></button>
                 </div>
             </div>
-            
-            <p id="characterDescription">Ganondorf, the dark lord who seeks to overthrow Hyrule, possesses the Triforce of Power.</p>
+
+            <p id="characterDescription">Ganondorf, the dark lord who seeks to overthrow Hyrule, possesses the Triforce
+                of Power.</p>
         </section>
 
         <div class="horLine"></div>
@@ -112,30 +121,100 @@
 
         <section>
             <h2 class="windButton">Glossary</h2>
-            <button class="glossaryButton">Characters</button>
-            <button class="glossaryButton">Items</button>
-            <div class="portraits">
-                <img src="./images/zeldaAbout/portal-characters-link-off.png" alt="Portrait of Link">
-                <img src="./images/zeldaAbout/portal-characters-zelda-off.png" alt="Portrait of Zelda">
-                <img src="./images/zeldaAbout/portal-characters-ganon-off.png" alt="Portrait of Ganon">
-                <img src="./images/zeldaAbout/portal-characters-ganondorf-off.png"
-                    alt="Portrait of Ganondorf in beast form">
-                <img src="./images/zeldaAbout/portal-characters-impa-off.png" alt="Portrait of Impa">
-                <img src="./images/zeldaAbout/portal-characters-deku-off.png" alt="Portrait of the Deku scrubs">
-                <img src="./images/zeldaAbout/portal-characters-sheikah-off.png" alt="Portrait of Sheik">
-                <img src="./images/zeldaAbout/portal-characters-goron-off.png" alt="Portrait of a goron">
-                <img src="./images/zeldaAbout/portal-characters-zora-off.png" alt="Portrait of a zora">
-                <img src="./images/zeldaAbout/portal-characters-kokiri-off.png" alt="Portrait of a kokiri">
-                <img src="./images/zeldaAbout/portal-characters-koroks-off.png" alt="Portrait of the koroks">
-                <img src="./images/zeldaAbout/portal-characters-gerudo-off.png" alt="Portrait of a gerudo">
-                <img src="./images/zeldaAbout/portal-characters-midna-off.png" alt="Portrait of Midna">
-                <img src="./images/zeldaAbout/portal-characters-great-fairy-off.png" alt="Portrait of the great fairy">
-                <img src="./images/zeldaAbout/portal-characters-rito-off.png" alt="Portrait of a rito">
-                <img src="./images/zeldaAbout/portal-characters-tingle-off.png" alt="Portrait of Tingle">
-                <img src="./images/zeldaAbout/portal-characters-kaepora-gaebora-off.png"
-                    alt="Portrait of Kaepora Gaebora">
-                <img src="./images/zeldaAbout/portal-characters-king-of-hyrule-off.png"
-                    alt="Portrait of the king of Hyrule">
+            <button class="glossaryButton" id="characterButton">Characters</button>
+            <button class="glossaryButton" id="itemButton">Items</button>
+            <div class="portraits" id="portraits">
+                <button><img src="./images/zeldaAbout/portal-characters-link-off.png" alt="Portrait of Link"></button>
+                <button><img src="./images/zeldaAbout/portal-characters-zelda-off.png" alt="Portrait of Zelda"></button>
+                <button><img src="./images/zeldaAbout/portal-characters-ganon-off.png" alt="Portrait of Ganon"></button>
+                <button><img src="./images/zeldaAbout/portal-characters-ganondorf-off.png"
+                        alt="Portrait of Ganondorf in beast form"></button>
+                <button><img src="./images/zeldaAbout/portal-characters-impa-off.png" alt="Portrait of Impa"></button>
+                <button><img src="./images/zeldaAbout/portal-characters-deku-off.png"
+                        alt="Portrait of the Deku scrubs"></button>
+                <button><img src="./images/zeldaAbout/portal-characters-sheikah-off.png"
+                        alt="Portrait of Sheik"></button>
+                <button><img src="./images/zeldaAbout/portal-characters-goron-off.png"
+                        alt="Portrait of a goron"></button>
+                <button><img src="./images/zeldaAbout/portal-characters-zora-off.png" alt="Portrait of a zora"></button>
+                <button><img src="./images/zeldaAbout/portal-characters-kokiri-off.png"
+                        alt="Portrait of a kokiri"></button>
+                <button><img src="./images/zeldaAbout/portal-characters-koroks-off.png"
+                        alt="Portrait of the koroks"></button>
+                <button><img src="./images/zeldaAbout/portal-characters-gerudo-off.png"
+                        alt="Portrait of a gerudo"></button>
+                <button><img src="./images/zeldaAbout/portal-characters-midna-off.png" alt="Portrait of Midna"></button>
+                <button><img src="./images/zeldaAbout/portal-characters-great-fairy-off.png"
+                        alt="Portrait of the great fairy"></button>
+                <button><img src="./images/zeldaAbout/portal-characters-rito-off.png" alt="Portrait of a rito"></button>
+                <button><img src="./images/zeldaAbout/portal-characters-tingle-off.png"
+                        alt="Portrait of Tingle"></button>
+                <button><img src="./images/zeldaAbout/portal-characters-kaepora-gaebora-off.png"
+                        alt="Portrait of Kaepora Gaebora"></button>
+                <button><img src="./images/zeldaAbout/portal-characters-king-of-hyrule-off.png"
+                        alt="Portrait of the king of Hyrule"></button>
+            </div>
+            <div class="portraits items hidden" id="items">
+                <button><img src="./images/zeldaAbout/items/portal-items-triforce-off.png" alt="The Triforce"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-sheikah-stone-off.png"
+                        alt="A Sheikah Stone"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-ocarina-of-time-off.png"
+                        alt="The Ocarina of Time"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-goddess-harp-off.png"
+                        alt="The harp of the Goddess Hylia"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-wind-waker-off.png"
+                        alt="The Wind Waker"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-majoras-mask-off.png"
+                        alt="Majora's Mask"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-master-sword-off.png"
+                        alt="The Master Sword"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-hylian-shield-off.png"
+                        alt="A Hylian Shield"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-bow-arrow-off.png"
+                        alt="A Bow and Arrow"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-bomb-off.png" alt="A bomb"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-boomerang-off.png"
+                        alt="The Gale Boomerang"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-hookshot-off.png" alt="A Hookshot"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-skull-hammer-off.png"
+                        alt="The Skull Hammer"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-boots-off.png" alt="A set of boots"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-power-glove-off.png"
+                        alt="Power Gloves"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-bottle-off.png" alt="A simple bottle"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-lens-of-truth-off.png"
+                        alt="The lens of Truth"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-light-arrow-off.png"
+                        alt="A light arrow"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-sheikah-slate-off.png"
+                        alt="The Sheikah Slate"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-heart-off.png" alt="A piece of heart"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-magic-hammer-off.png"
+                        alt="The magic hammer"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-slingshot-off.png" alt="A slingshot"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-pegasus-boots-off.png"
+                        alt="The pegasus boots"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-iron-boots-off.png" alt="Iron boots"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-tunic-off.png" alt="A green tunic"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-mirror-shield-off.png"
+                        alt="The mirror shield"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-triforce-shards-off.png"
+                        alt="A shard of the Triforce"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-flippers-off.png"
+                        alt="Flippers for swimming"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-cuccos-off.png"
+                        alt="A cucco, the chicken of Hyrule"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-map-off.png" alt="A map"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-boss-key-off.png"
+                        alt="The key to the boss room"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-rod-off.png" alt="The rod of fire"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-rupee-off.png"
+                        alt="A rupee, the currency in Hyrule"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-potion-off.png"
+                        alt="A potion in a bottle"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-bug-catching-net-off.png"
+                        alt="A bug catching net"></button>
+                <button><img src="./images/zeldaAbout/items/portal-items-small-key-off.png" alt="A small key"></button>
             </div>
 
         </section>

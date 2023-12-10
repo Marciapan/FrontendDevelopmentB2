@@ -1,9 +1,21 @@
 // JavaScript Document
 console.log("hi");
 
-// for the menu
+// for the menu, the onscroll function NEEDS to go before the other queryselectors and functions otherwise it won't work
 var navBar = document.querySelector(".menu");
+var collapseBar = document.querySelector(".collapsibleMenu");
+var burgerIcon = document.querySelector("#burgermenuIcon")
 var stickyNav = navBar.offsetTop;
+
+window.onscroll = function (stickyNav) {
+    if (scrollY > 0) {
+        navBar.classList.add("sticky");
+        collapseBar.classList.add("sticky2");
+    } else {
+        navBar.classList.remove("sticky");
+        collapseBar.classList.remove("sticky2");
+    }
+};
 
 // changing characters and triforce pieces depending on what's selected
 var whatCharacter = document.querySelector(".characterPortrait");
@@ -20,17 +32,30 @@ var powerButton = document.querySelector(".piecePower");
 var wisdomButton = document.querySelector(".pieceWisdom");
 var courageButton = document.querySelector(".pieceCourage");
 
+var glossaryCharacters= document.querySelector("#characterButton");
+var glossaryItems= document.querySelector("#itemButton");
 
-console.log(goLeft);
+var characterList = document.querySelector("#portraits");
+var itemList = document.querySelector("#items");
+
 
 // eventlisteners
+burgerIcon.addEventListener("click", displayMenu);
+
 goLeft.addEventListener("click", upCharacter);
 goRight.addEventListener("click", downCharacter);
 powerButton.addEventListener("click", changePower);
 wisdomButton.addEventListener("click", changeWisdom);
 courageButton.addEventListener("click", changeCourage);
 
+glossaryCharacters.addEventListener("click", displayCharacters);
+glossaryItems.addEventListener("click", displayItems);
+
 // funcions
+function displayMenu(){
+    collapseBar.classList.toggle("hidden");
+}
+
 function upCharacter() {
     counter += 1;
     console.log(counter);
@@ -91,11 +116,12 @@ function changeCourage() {
     courageButton.classList.add("pieceCourageActive");
 }
 
-window.onscroll = function (stickyNav) {
-    if (scrollY > 0) {
-        navBar.classList.add("sticky");
-    } else {
-        navBar.classList.remove("sticky");
-    }
-};
+function displayCharacters(){
+    characterList.classList.remove("hidden");
+    itemList.classList.add("hidden");
+}
 
+function displayItems(){
+    characterList.classList.add("hidden");
+    itemList.classList.remove("hidden");
+}

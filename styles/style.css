@@ -100,6 +100,11 @@ footer {
 
 }
 
+a{
+	text-decoration: none;
+	color: var(--primary-text-colour);
+}
+
 .discover {
 	font-family: var(--main-font);
 	color: var(--primary-text-colour);
@@ -225,34 +230,34 @@ footer {
 
 .triforce {
 	display: flex;
-    flex-direction: column;
-    align-items: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .triforceDown {
 	display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+	flex-wrap: nowrap;
+	flex-direction: row;
 }
 
 .piecePower {
 	background: url(../images/zeldaAbout/triforce/power_inactive.png);
-    border: none;
-    width: 18em;
-    height: 16em;
+	border: none;
+	width: 18em;
+	height: 16em;
 }
 
 .pieceWisdom {
 	background: url(../images/zeldaAbout/triforce/wisdom_inactive.png);
 	width: 64vw;
-    height: 56vw;
+	height: 56vw;
 	border: none;
 }
 
 .pieceCourage {
 	background: url(../images/zeldaAbout/triforce/courage_inactive.png);
 	width: 64vw;
-    height: 56vw;
+	height: 56vw;
 	border: none;
 }
 
@@ -276,7 +281,7 @@ footer {
 	margin: 4em 1em;
 }
 
-.arrows{
+.arrows {
 	border: none;
 	background-color: transparent;
 	transform: scale(0.5);
@@ -405,12 +410,19 @@ footer {
 	border-bottom: 2px solid transparent;
 	border-image: linear-gradient(to right, #000 0%, var(--detail-color) 50%, #000 100%);
 	border-image-slice: 1;
-	z-index: 5;
+	z-index: 10;
 }
 
 .sticky {
 	position: fixed;
 	top: 0;
+	z-index: 20;
+}
+
+.sticky2{
+	position: fixed;
+	top: 5%;
+	z-index: 20;
 }
 
 .menuImg {
@@ -604,19 +616,35 @@ footer {
 
 .portraits {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: repeat(6, 1fr);
-	column-gap: 5%;
-	row-gap: 5%;
-	margin-bottom: 4em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 5%;
+    row-gap: 2%;
+    margin-bottom: 6em;
 }
 
-.portraits img {
+.items{
+	grid-template-rows: repeat(12, 1fr);
+	margin-bottom: 20em;
+}
+
+.portraits button{
+	border: none;
+	background-color: transparent;
+	padding: 0;
+}
+
+.portraits button img{
 	width: 100%;
+	height: 100%;
 }
 
-.portraits img:hover {
-	background-color: var(--detail-color);
+.portraits button img:hover {
+	background-image: url("../images/zeldaAbout/Glow-Golden-PNG-File.png");
+	background-position: center center;
+	background-size: contain;
+	-webkit-transition: background-image 0.2s ease-in-out;
+	transition: background-image 0.2s ease-in-out;
 }
 
 .link {
@@ -739,6 +767,18 @@ footer {
 	color: var(--primary-text-colour);
 	font-size: 1.2rem;
 	font-style: italic;
+}
+
+.collapsibleMenu {
+	background: rgba(0, 0, 0, 0.8);
+    transition: opacity .3s ease, visibility .3s ease;
+    padding: 10px 15px;
+    left: 0;
+    width: 100%;
+}
+
+.hidden{
+	display: none;
 }
 
 /* ID's */

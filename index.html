@@ -14,11 +14,13 @@
 
 
 <!-- screenreader test 2 doen -->
+
 <body>
 	<header>
 		<nav class="background">
 			<section class="red">
-				<img src="./images/nintendo-racetrack.svg" alt="The logo for Nintendo" class="menuImg">
+				<a href="index.html"><img src="./images/nintendo-racetrack.svg" alt="The logo for Nintendo"
+						class="menuImg"></a>
 				<div class="account">
 					<img src="./images/account-svgrepo-com.svg" alt="Icon for account" class="icon">
 					<p class="loginText">Log in / Sign up</p>
@@ -32,7 +34,14 @@
 			<section class="menu">
 				<img src="../FrontendDevelopmentB2/images/zelda_site_home/logo-loz.png"
 					alt="The logo for The legend of Zelda" class="menuImg">
-				<img src="./images/burger.svg" alt="Burger menu, clickable" class="icon">
+				<img src="./images/burger.svg" alt="Burger menu, clickable" class="icon" id="burgermenuIcon">
+			</section>
+			<section class="collapsibleMenu hidden">
+				<ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>News</li>
+                </ul>
 			</section>
 			<section class="official">
 				<h3 class="officialHome">Official home of</h3>
@@ -222,7 +231,7 @@
 				</div>
 				<div>
 					<h3 class="adCardTitle">Holiday Create-a-Card</h3>
-					<p class="adCardText">You can create your own custom holiday cards for friends and family!I</p>
+					<p class="adCardText">You can create your own custom holiday cards for friends and family!</p>
 				</div>
 			</article>
 		</section>
