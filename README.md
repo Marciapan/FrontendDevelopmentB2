@@ -1,14 +1,4 @@
 # Procesverslag
-Markdown is een simpele manier om HTML te schrijven.  
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
-
-
-
-
 
 ## Jij
 
@@ -23,6 +13,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Je focus:
   Extra aandacht voor surface laag
+  
  
 </details>
 
@@ -40,7 +31,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   en
   https://zelda.nintendo.com/about/
 
-<details open>
+<details>
   <summary>Foto's van de pagina's</summary>
   
   #### Screenshot(s) van de eerste pagina (small screen): 
@@ -65,8 +56,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary> Screenreader:</summary>
-  
-  Home page:
+
+  ### Bevindingen
+  Lijst met je bevindingen die in de test naar voren kwamen:
+Home page:
   - Alle socials hebben geen alt (behalve discord)
   - Lastig te onderscheiden wat tekst en wat HTML semantics is
   - Alle foto's hebben dezelfde alt
@@ -78,10 +71,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Youtube links hebben veel interne knoppen in de player, kan niet gelijk door
   - Skipt af en toe tekst tussen video's
   - Geen alts op foto's
-
-  ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
-
 </details>
 
 
@@ -92,7 +81,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  
+  ![breakdownschets zelda](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/6ba4cb78-f518-4d0c-97f1-b9e89d9a0c23)
+
   
 </details>
 
@@ -108,19 +98,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   De website die ik heb gekozen is niet divers genoeg qua content. Ik heb overlegd met de leraar en we hebben samen een nieuwe website gekozen. Gelukkig was ik nog niet zo heel ver en ging er geen werk verloren.
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Nieuw doel: de zelda.nintendo.com website. Beide de home en About pagina, werken aan surface laag en js goed werkend krijgen.
 
   - Andere website gekozen
   - Verder werken aan gekozen website
@@ -141,19 +120,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   De code is op zich goed, ik maak veel gebruik van classes maar zolang dit goed te onderbouwen is maakt het niet uit.
   De header moet iets aangepast worden qua structuur, de hele sectie mag "nav" zijn ipv alleen de menubalk.
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen (doen wij niet
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Verdergaan met de HTML en CSS van de andere pagina, ik loop nog steeds achter.
 
   - Veranderen head -> nav
   - Letten op classes
@@ -185,26 +153,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Kleine onduidelijkheden over aantal classes, maar op zich is het prima. Mijn HTML en CSS zien er netjes uit, nu verder met de JS om de pagina "werkend" te krijgen. Ik heb hiervoor al een aantal ideeën, dus dit zal niet al te lang moeten duren.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Proberen minder classes te gebruiken, maak hier ipv gebruik van selectors binnen een overkoepelende class.
+  - JS afmaken om pagina werkend te krijgen.
+  - CSS ordenen.
+
 
 </details>
 
@@ -218,19 +175,44 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  Home:
+  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/41f14c91-f52e-4dd7-b208-cb6b4930ecb8)
 
+  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/d3c24be6-65b3-4b79-a022-a5181f1d579d)
+
+  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/ac2f660c-151d-4b17-aa92-eedfd0b26e39)
+
+  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/6efe4d07-3a3d-4210-9c28-649b3f6b6327)
+
+  About:
+  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/45c3938b-adc1-4d57-8227-0bfeb0c884de)
+
+  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/460c9cce-57ad-415a-9ba9-0c189a28efe3)
+
+  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/83cdbef3-a456-4906-bd85-d72187b32b96)
+
+Mijn surface plane onderwerpen:
+- animaties
+- svg's
+- scroll javascript dinges
+- custom properties
+- DOM manipulatie (::before & ::after)
+- Advanced positioning, sticky, fixed z-index
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Wat ik vooral erg goed vond gaan was het werken met de ::before en ::after tags. Dit had ik nog nooit eerder gedaan, dus dit was even puzzelen. Maar ik ben erg tevreden met het eindresultaat! Ook ben ik blij dat ik een moeilijkere site heb gekozen. De Stardew Valley pagina was leuk, maar veel te makkelijk. Deze website gaf me nog een uitdaging en ik vond het erg leuk om aan te werken!
+![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/e37390c7-e3ee-4620-958b-ea644b3c69d9)
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/228e6fc7-1088-4128-81f6-06348fcf1446)
+
+Daarnaast was het heel leerzaam om per blok te kijken welke manier van weergeven de beste is. Zo heb ik eigenlijk altijd gewerkt met flexboxes, maar hier en daar een Grid is toch wel makkelijk!
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Voor de kleine achtergrondanimatie had ik geen tijd meer. Ook is het niet gelukt om de animaties tussendoor toe te voegen. Ik heb nu wel animaties, maar die spelen gelijk af bij het laden van de pagina. Ik had een API kunnen gebruiken hiervoor, maar door tijdsnood heb ik ervoor gekozen om dit voor nu te laten.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  ![image](https://github.com/Marciapan/FrontendDevelopmentB2/assets/122381666/8c9d8fea-d9aa-4f52-9d8f-2ef251e47226)
+
 </details>
 
 
@@ -240,14 +222,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Bronnenlijst
 
 <details open>
-  <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. zelda.nintendo.com voor alle assets, kleuren, stijlen en vormgeving.
+  2. [https://css-tricks.com/almanac/](https://css-tricks.com/almanac/selectors/a/after-and-before/)https://css-tricks.com/almanac/selectors/a/after-and-before/ Voor de hulp bij de ::before en ::after tags in de code en andere snelle vragen.
+  3. https://stackoverflow.com/ voor specifieke vragen en oplossingen op mijn problemen.
 
 </details>
