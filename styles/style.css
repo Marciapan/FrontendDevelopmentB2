@@ -38,7 +38,10 @@
 /* JOUW STYLING */
 /****************/
 
-body {
+a {
+	text-decoration: none;
+	color: var(--primary-text-colour);
+}body {
 	margin: 0;
 	background-image: url("../images/pattern-triforce-2x.png"), linear-gradient(to bottom, #023326 0%, #053335 50%, #0a1928 100%);
 	background-position: center center;
@@ -49,27 +52,30 @@ body {
 	color: var(--primary-text-colour);
 }
 
-nav {
-	position: sticky;
-	top: 0px;
+footer {
+	background-color: black;
+
 }
 
 h2 {
 	margin: 0;
 }
 
-p {
-	font-family: var(--main-font);
-	line-height: 1.5em;
-}
-
 img {
 	overflow: hidden;
 }
 
-ul {
-	list-style-type: none;
-	padding: 0;
+nav {
+	position: sticky;
+	top: 0px;
+}
+
+p {
+	font-family: var(--main-font);
+	line-height: 1.5em;
+	font-size: 1.125rem;
+	line-height: 1.6em;
+	padding: 0 1em;
 }
 
 section {
@@ -83,202 +89,78 @@ section {
 	overflow: hidden;
 }
 
-p {
-	font-size: 1.125rem;
-	line-height: 1.6em;
-	padding: 0 1em;
-}
-
 time {
 	font-family: var(--main-font);
 	color: var(--detail-color);
 	font-style: italic;
 }
 
-footer {
-	background-color: black;
-
-}
-
-a{
-	text-decoration: none;
-	color: var(--primary-text-colour);
-}
-
-.discover {
-	font-family: var(--main-font);
-	color: var(--primary-text-colour);
-	font-size: 1.3em;
-	font-weight: 500;
-}
-
-.theLegend {
-	font-family: var(--main-font);
-	color: var(--primary-text-colour);
-	font-size: 1.5em;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-.logos {
-	display: inline-flex;
-	flex-direction: row;
-	justify-content: space-around;
-	width: 100%;
-}
-
-.logos img {
-	width: 15%;
-	margin: 0.5em;
-	border-radius: 0.5em;
-}
-
-.certificates {
-	display: inline-flex;
-	flex-direction: row;
-	justify-content: center;
-	width: auto;
-	height: 7em;
-}
-
-.certificates img {
-	width: 100%;
-	margin: 0.5em;
-	border-radius: 0.5em;
-}
-
-.decoratedList {
-	padding: 0;
-	margin: 0;
-}
-
-.decoratedItem {
+ul {
 	list-style-type: none;
-	padding: 1em;
-}
-
-.linkList {
 	padding: 0;
-	margin: 0;
-	margin-top: 1em;
 }
 
-.linkItem {
-	list-style-type: none;
-}
 
-.decoratedItem::before {
-	content: "";
-	background: url('../images/zelda_site_home/button_decoration_left.png');
-	width: 2.6em;
-	height: 3.4em;
-	position: absolute;
-	left: 20%;
-}
-
-.decoratedItem::after {
-	content: "";
-	background: url('../images/zelda_site_home/button_decoration_right.png');
-	width: 2.6em;
-	height: 3.4em;
-	position: absolute;
-	right: 20%;
-	transform: translate(0, -1em);
-}
-
-.gateBackground {
-	z-index: -20;
-	animation: spinning 60s infinite;
-	animation-timing-function: linear;
-	position: sticky;
-	overflow-x: hidden;
-}
-
-.up {
-	position: absolute;
-	top: 75%;
-}
-
-.windButton {
-	font-family: var(--main-font);
-	color: var(--primary-text-colour);
-	padding: 0 1em;
-}
-
-.windButton::before {
-	content: "";
-	background: url(../images/zeldaAbout/about_squigle_left.png);
-	width: 1.8em;
-	height: 1.2em;
-	position: absolute;
-	transform: translateX(-1.8em);
-}
-
-.windButton::after {
-	content: "";
-	background: url(../images/zeldaAbout/about_squigle_left.png);
-	width: 1.8em;
-	height: 1.2em;
-	position: absolute;
-	transform: scaleX(-1);
-}
-
-.triforceBearers {
-	width: 100%;
-	margin-top: 30em;
-}
-
-.triforce {
+/* classes */
+.account {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
+	fill: var(--detail-color);
+	padding: 0;
 }
 
-.triforceDown {
+.adCard {
 	display: flex;
-	flex-wrap: nowrap;
-	flex-direction: row;
-}
-
-.piecePower {
-	background: url(../images/zeldaAbout/triforce/power_inactive.png);
-	border: none;
-	width: 18em;
-	height: 16em;
-}
-
-.pieceWisdom {
-	background: url(../images/zeldaAbout/triforce/wisdom_inactive.png);
-	width: 64vw;
-	height: 56vw;
-	border: none;
-}
-
-.pieceCourage {
-	background: url(../images/zeldaAbout/triforce/courage_inactive.png);
-	width: 64vw;
-	height: 56vw;
-	border: none;
-}
-
-.piecePowerActive {
-	background: url(../images/zeldaAbout/triforce/power_active.png);
-}
-
-.pieceWisdomActive {
-	background: url(../images/zeldaAbout/triforce/wisdom_active.png);
-}
-
-.pieceCourageActive {
-	background: url(../images/zeldaAbout/triforce/courage_active.png);
-}
-
-.character {
+	flex-direction: row-reverse;
 	width: 100%;
+	border: #000 3px;
+	background-color: #e2d267;
+	margin-bottom: 0.5em;
+	animation-name: boing;
+	animation-duration: 1s;
+}
+
+.adCardImage {
+	width: 100%;
+}
+
+.adCardReverse {
 	display: flex;
 	flex-direction: row;
-	justify-content: start;
-	margin: 4em 1em;
+	width: 100%;
+	border: #000 3px;
+	background-color: #e2d267;
+	margin-bottom: 0.5em;
+	animation-name: boing;
+	animation-duration: 1s;
+}
+
+.adCardText {
+	font-size: 0.9em;
+	line-height: 1.2;
+	width: 45vw;
+}
+
+.adCardTitle {
+	font-size: 1em;
+	width: 45vw;
+}
+
+.amiibo {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 2fr 2fr;
+	animation-name: slideIn;
+	animation-duration: 2s;
+}
+
+.amiiboImg {
+	width: 90%;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.amiiboText {
+	grid-column: span 2;
 }
 
 .arrows {
@@ -287,57 +169,30 @@ a{
 	transform: scale(0.5);
 }
 
-.symbol {
-	width: 100%;
-}
-
-.characterPortrait {
-	width: 100%;
-	transform: scale(2);
-	z-index: -3;
-}
-
-.officialHome {
-	color: var(--primary-text-colour);
+.articleButton {
+	display: block;
+	color: var(--button-text);
+	background-color: var(--detail-color);
 	font-family: var(--main-font);
-	font-size: 0.8rem;
-}
+	font-weight: bold;
+	font-size: 1.125em;
+	border: none;
+	width: 100%;
+	height: 2.4em;
+	cursor: pointer;
+	outline: none;
 
-.officialHome::before {
-	background-image: url("../images/zeldaAbout/sword_decorator.png");
-	background-repeat: no-repeat;
-	transform: rotate(180deg) translate(2em);
-	width: 2em;
-	height: 1em;
-	content: "";
-	position: absolute;
-}
-
-.officialHome::after {
-	background-image: url("../images/zeldaAbout/sword_decorator.png");
-	background-repeat: no-repeat;
-	transform: translate(0.6em, -0.1em);
-	width: 2em;
-	height: 1em;
-	content: "";
-	position: absolute;
 }
 
 .articleImg {
 	width: 100%;
 }
 
-.video {
-	width: 100%;
-	border: 2px var(--detail-color) solid;
-}
-
-.videoSection {
-	padding: 1em;
-	font-family: var(--main-font);
-	color: var(--primary-text-colour);
-	font-size: 1.125rem;
-	background-color: rgba(0, 0, 0, 0.2);
+.articleProd {
+	background-color: var(--background-article);
+	margin-bottom: 5%;
+	padding: 0.5em;
+	text-align: left;
 }
 
 .background {
@@ -356,139 +211,50 @@ a{
 	height: auto;
 }
 
-.red {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-direction: row;
+.certificates img {
 	width: 100%;
-	color: var(--background-article);
-	background-color: red;
-	padding: 0;
+	margin: 0.5em;
+	border-radius: 0.5em;
 }
 
-.account {
-	display: flex;
-	align-items: center;
-	fill: var(--detail-color);
-	padding: 0;
-}
-
-.loginText {
-	font-family: var(--secondary-font);
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.reduceMotion {
-	display: flex;
+.certificates {
+	display: inline-flex;
+	flex-direction: row;
 	justify-content: center;
-	align-items: center;
-	flex-direction: row;
-	width: 100%;
-	color: var(--detail-color);
-	background-color: black;
-	/* gives the div a border at the bottom */
-	border-bottom: 2px solid transparent;
-	border-image: linear-gradient(to right, #000 0%, var(--detail-color) 50%, #000 100%);
-	border-image-slice: 1;
-	padding: 0;
+	width: auto;
+	height: 7em;
 }
 
-.menu {
+.character {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: start;
+	margin: 4em 1em;
+}
+
+.characterPortrait {
 	width: 100%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	padding-left: 3%;
-	padding-right: 3%;
-	color: white;
-	background-color: rgba(0, 0, 0, 0.5);
-	border-bottom: 2px solid transparent;
-	border-image: linear-gradient(to right, #000 0%, var(--detail-color) 50%, #000 100%);
-	border-image-slice: 1;
-	z-index: 10;
+	transform: scale(2);
+	z-index: -3;
+	animation-name: slideOut;
+	animation-duration: 2s;
 }
 
-.sticky {
-	position: fixed;
-	top: 0;
-	z-index: 20;
-}
-
-.sticky2{
-	position: fixed;
-	top: 5%;
-	z-index: 20;
-}
-
-.menuImg {
-	height: 1.5em;
-}
-
-.icon {
-	height: 1.2em;
-}
-
-.logo {
-	width: 60%;
-}
-
-.uppercase {
-	text-transform: uppercase;
-	font-size: 1.125rem;
-}
-
-.ruler {
-	background-image: url("../images/zelda_site_home/hyrule_rule.png");
-	background-position-x: center;
-	background-position-y: bottom;
-	height: 5.4em;
+.collapsibleMenu {
+	background: rgba(0, 0, 0, 0.8);
+	transition: opacity .3s ease, visibility .3s ease;
+	padding: 10px 15px;
+	left: 0;
 	width: 100%;
-	position: relative;
-	z-index: 5;
-	transform: translate(0, 3em);
-	margin-bottom: 4em;
 }
 
-.fancyButton {
-	display: block;
-	border: none;
-	border-top: 4px var(--detail-color) solid;
-	border-bottom: 4px var(--detail-color) solid;
-	width: 70%;
-	background-color: transparent;
-	color: var(--primary-text-colour);
-	padding: 0.5em 0;
+.consoleTag {
+	color: var(--detail-color);
 	font-family: var(--tertiary-font);
-	font-size: 1.125rem;
-}
-
-.fancyButton::before {
-	content: "";
-	background: url('../images/zelda_site_home/cta_button_left.png');
-	background-size: 100%;
-	background-repeat: no-repeat;
-	width: 1.85em;
-	height: 4em;
-	position: absolute;
-	left: 20%;
-	transform: translate(-36px, -13px);
-}
-
-.fancyButton::after {
-	content: "";
-	background: url("../images/zelda_site_home/cta_button_right.png");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	width: 1.85em;
-	height: 4em;
-	position: absolute;
-	right: 4%;
-	transform: translate(-21px, -13px);
+	font-size: 0.875rem;
+	margin-bottom: 0;
+	margin-top: 0.5em;
 }
 
 .coolButton {
@@ -505,39 +271,97 @@ a{
 	margin-bottom: 1em;
 }
 
-.amiibo {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 2fr 2fr;
+.darkgreen {
+	background-color: #7DA1A5;
+	background-image: linear-gradient(to right, #000 0%, #193c38 25%, #193c38 75%, #000 100%);
+	margin-bottom: 8em;
 }
 
-.amiiboImg {
-	width: 90%;
-	background-color: rgba(0, 0, 0, 0.2);
+.decoratedItem {
+	list-style-type: none;
+	padding: 1em;
 }
 
-.amiiboText {
-	grid-column: span 2;
+.decoratedItem::after {
+	content: "";
+	background: url('../images/zelda_site_home/button_decoration_right.png');
+	width: 2.6em;
+	height: 3.4em;
+	position: absolute;
+	right: 20%;
+	transform: translate(0, -1em);
+}
+
+.decoratedItem::before {
+	content: "";
+	background: url('../images/zelda_site_home/button_decoration_left.png');
+	width: 2.6em;
+	height: 3.4em;
+	position: absolute;
+	left: 20%;
+}
+
+.decoratedList {
+	padding: 0;
+	margin: 0;
+}
+
+.discover {
+	font-family: var(--main-font);
+	color: var(--primary-text-colour);
+	font-size: 1.3em;
+	font-weight: 500;
+}
+
+.facebook {
+	background-image: linear-gradient(to right, #000 0%, #1B2E40 25%, #1B2E40 75%, #000 100%);
+}
+
+.fancyButton {
+	display: block;
+	border: none;
+	border-top: 4px var(--detail-color) solid;
+	border-bottom: 4px var(--detail-color) solid;
+	width: 70%;
+	background-color: transparent;
+	color: var(--primary-text-colour);
+	padding: 0.5em 0;
+	font-family: var(--tertiary-font);
+	font-size: 1.125rem;
+}
+
+.fancyButton::after {
+	content: "";
+	background: url("../images/zelda_site_home/cta_button_right.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 1.85em;
+	height: 4em;
+	position: absolute;
+	right: 4%;
+	transform: translate(-21px, -13px);
+}
+
+.fancyButton::before {
+	content: "";
+	background: url('../images/zelda_site_home/cta_button_left.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 1.85em;
+	height: 4em;
+	position: absolute;
+	left: 20%;
+	transform: translate(-36px, -13px);
+}
+
+.featProd h3 {
+	animation-name: fadeIn;
+	animation-duration: 2s;
 }
 
 .featProd {
 	padding-left: 8%;
 	padding-right: 8%;
-}
-
-.articleProd {
-	background-color: var(--background-article);
-	margin-bottom: 5%;
-	padding: 0.5em;
-	text-align: left;
-}
-
-.consoleTag {
-	color: var(--detail-color);
-	font-family: var(--tertiary-font);
-	font-size: 0.875rem;
-	margin-bottom: 0;
-	margin-top: 0.5em;
 }
 
 .gameTitle {
@@ -548,169 +372,12 @@ a{
 	margin-top: 0.5em;
 }
 
-.articleButton {
-	display: block;
-	color: var(--button-text);
-	background-color: var(--detail-color);
-	font-family: var(--main-font);
-	font-weight: bold;
-	font-size: 1.125em;
-	border: none;
-	width: 100%;
-	height: 2.4em;
-	cursor: pointer;
-	outline: none;
-
-}
-
-.newsArticle {
-	background-color: var(--background-news);
-	margin-bottom: 5%;
-	padding: 0.5em;
-	text-align: left;
-}
-
-.newsTitle {
-	color: var(--card-title-color);
-	font-family: var(--main-font);
-	font-size: 1.125em;
-	font-weight: bold;
-	margin: 0;
-}
-
-.newsText {
-	color: var(--card-text-color);
-	font-family: var(--main-font);
-	font-size: 0.9rem;
-	margin: 0;
-	padding: 0;
-}
-
-.newsButton {
-	display: block;
-	color: var(--button-text);
-	background-color: var(--detail-color);
-	font-family: var(--main-font);
-	font-weight: bold;
-	font-size: 1.125em;
-	border: none;
-	width: 100%;
-	height: 2.4em;
-	cursor: pointer;
-	outline: none;
-
-}
-
-.horLine {
-	height: 2px;
-	background: linear-gradient(to right, #000 0%, var(--detail-color) 50%, #000 100%);
-	position: absolute;
-	left: 0;
-	width: 100%;
-	z-index: 1;
-}
-
-.facebook {
-	background-image: linear-gradient(to right, #000 0%, #1B2E40 25%, #1B2E40 75%, #000 100%);
-}
-
-.portraits {
-	display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    column-gap: 5%;
-    row-gap: 2%;
-    margin-bottom: 6em;
-}
-
-.items{
-	grid-template-rows: repeat(12, 1fr);
-	margin-bottom: 20em;
-}
-
-.portraits button{
-	border: none;
-	background-color: transparent;
-	padding: 0;
-}
-
-.portraits button img{
-	width: 100%;
-	height: 100%;
-}
-
-.portraits button img:hover {
-	background-image: url("../images/zeldaAbout/Glow-Golden-PNG-File.png");
-	background-position: center center;
-	background-size: contain;
-	-webkit-transition: background-image 0.2s ease-in-out;
-	transition: background-image 0.2s ease-in-out;
-}
-
-.link {
-	display: block;
-	position: absolute;
-	left: 0;
-	z-index: 1;
-	width: 65%;
-	transform: translate(-2em, 5em);
-}
-
-.zelda {
-	display: block;
-	position: absolute;
-	right: 0;
-	z-index: 2;
-	width: 70%;
-}
-
-.groupPic {
-	padding-bottom: 150%;
-}
-
-.playNintendo {
-	font-family: var(--main-font);
-	color: var(--primary-text-colour);
-	font-size: 1.5em;
-}
-
-.darkgreen {
-	background-color: #7DA1A5;
-	background-image: linear-gradient(to right, #000 0%, #193c38 25%, #193c38 75%, #000 100%);
-	margin-bottom: 8em;
-}
-
-.adCard {
-	display: flex;
-	flex-direction: row-reverse;
-	width: 100%;
-	border: #000 3px;
-	background-color: #e2d267;
-	margin-bottom: 0.5em;
-}
-
-.adCardReverse {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	border: #000 3px;
-	background-color: #e2d267;
-	margin-bottom: 0.5em;
-}
-
-.adCardImage {
-	width: 100%;
-}
-
-.adCardTitle {
-	font-size: 1em;
-	width: 45vw;
-}
-
-.adCardText {
-	font-size: 0.9em;
-	line-height: 1.2;
-	width: 45vw;
+.gateBackground {
+	z-index: -20;
+	animation: spinning 60s infinite;
+	animation-timing-function: linear;
+	position: sticky;
+	overflow-x: hidden;
 }
 
 .glossaryButton {
@@ -732,21 +399,9 @@ a{
 	background-color: rgba(27, 63, 60, 0.9);
 }
 
-.glossaryButton:focus::before {
-	content: "";
-	background: url(../images/zeldaAbout/glossary_icon.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	width: 1.85em;
-	height: 4em;
-	position: absolute;
-	left: 0;
-	transform: translate(-1.5em, -0.5em);
-}
-
 .glossaryButton:focus::after {
 	content: "";
-	background: url(../images/zeldaAbout/glossary_icon_right.png);
+	background: url("../images/zeldaAbout/glossary_icon_right.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
 	width: 1.85em;
@@ -754,6 +409,18 @@ a{
 	position: absolute;
 	right: 0;
 	transform: translate(1.5em, -0.5em);
+}
+
+.glossaryButton:focus::before {
+	content: "";
+	background: url("../images/zeldaAbout/glossary_icon.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 1.85em;
+	height: 4em;
+	position: absolute;
+	left: 0;
+	transform: translate(-1.5em, -0.5em);
 }
 
 .goddesses li h3 {
@@ -769,19 +436,390 @@ a{
 	font-style: italic;
 }
 
-.collapsibleMenu {
-	background: rgba(0, 0, 0, 0.8);
-    transition: opacity .3s ease, visibility .3s ease;
-    padding: 10px 15px;
-    left: 0;
-    width: 100%;
+.groupPic {
+	padding-bottom: 150%;
 }
 
-.hidden{
-	display: none;
+.hidden {
+	display: none !important;
 }
 
-/* ID's */
+.history {
+	animation-name: fadeIn;
+	animation-duration: 2s;
+}
+
+.horLine {
+	height: 2px;
+	background: linear-gradient(to right, #000 0%, var(--detail-color) 50%, #000 100%);
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.icon {
+	height: 1.2em;
+}
+
+.items {
+	grid-template-rows: repeat(12, 1fr) !important;
+	margin-bottom: 20em !important;
+}
+
+.link {
+	display: block;
+	position: absolute;
+	left: 0;
+	z-index: 4;
+	width: 65%;
+	transform: translate(-2em, 5em);
+	animation-name: slideIn;
+	animation-duration: 2s;
+}
+
+.linkItem {
+	list-style-type: none;
+}
+
+.linkList {
+	padding: 0;
+	margin: 0;
+	margin-top: 1em;
+}
+
+.loginText {
+	font-family: var(--secondary-font);
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.logo {
+	width: 60%;
+}
+
+.logos img {
+	width: 15%;
+	margin: 0.5em;
+	border-radius: 0.5em;
+}
+
+.logos {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 3%;
+	padding-right: 3%;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-bottom: 2px solid transparent;
+	border-image: linear-gradient(to right, #000 0%, var(--detail-color) 50%, #000 100%);
+	border-image-slice: 1;
+	z-index: 10;
+}
+
+.menuImg {
+	height: 1.5em;
+}
+
+.newsArticle {
+	background-color: var(--background-news);
+	margin-bottom: 5%;
+	padding: 0.5em;
+	text-align: left;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+}
+
+.newsButton {
+	display: block;
+	color: var(--button-text);
+	background-color: var(--detail-color);
+	font-family: var(--main-font);
+	font-weight: bold;
+	font-size: 1.125em;
+	border: none;
+	width: 100%;
+	height: 2.4em;
+	cursor: pointer;
+	outline: none;
+
+}
+
+.newsText {
+	color: var(--card-text-color);
+	font-family: var(--main-font);
+	font-size: 0.9rem;
+	margin: 0;
+	padding: 0;
+}
+
+.newsTitle {
+	color: var(--card-title-color);
+	font-family: var(--main-font);
+	font-size: 1.125em;
+	font-weight: bold;
+	margin: 0;
+}
+
+.official {
+	animation-name: fadeIn;
+	animation-duration: 2s;
+}
+
+.officialHome {
+	color: var(--primary-text-colour);
+	font-family: var(--main-font);
+	font-size: 0.8rem;
+}
+
+.officialHome::after {
+	background-image: url("../images/zeldaAbout/sword_decorator.png");
+	background-repeat: no-repeat;
+	transform: translate(0.6em, -0.1em);
+	width: 2em;
+	height: 1em;
+	content: "";
+	position: absolute;
+}
+
+.officialHome::before {
+	background-image: url("../images/zeldaAbout/sword_decorator.png");
+	background-repeat: no-repeat;
+	transform: rotate(180deg) translate(2em);
+	width: 2em;
+	height: 1em;
+	content: "";
+	position: absolute;
+}
+
+.pieceCourage {
+	background: url(../images/zeldaAbout/triforce/courage_inactive.png);
+	width: 64vw;
+	height: 56vw;
+	border: none;
+}
+
+.pieceCourageActive {
+	background: url(../images/zeldaAbout/triforce/courage_active.png);
+}
+
+.piecePower {
+	background: url(../images/zeldaAbout/triforce/power_inactive.png);
+	border: none;
+	width: 18em;
+	height: 16em;
+}
+
+.piecePowerActive {
+	background: url(../images/zeldaAbout/triforce/power_active.png);
+}
+
+.pieceWisdom {
+	background: url(../images/zeldaAbout/triforce/wisdom_inactive.png);
+	width: 64vw;
+	height: 56vw;
+	border: none;
+}
+
+.pieceWisdomActive {
+	background: url(../images/zeldaAbout/triforce/wisdom_active.png);
+}
+
+.playNintendo {
+	font-family: var(--main-font);
+	color: var(--primary-text-colour);
+	font-size: 1.5em;
+}
+
+.portraits button img {
+	width: 100%;
+	height: 100%;
+}
+
+.portraits button img:hover {
+	background-image: url("../images/zeldaAbout/Glow-Golden-PNG-File.png");
+	background-position: center center;
+	background-size: contain;
+	-webkit-transition: background-image 0.2s ease-in-out;
+	transition: background-image 0.2s ease-in-out;
+}
+
+.portraits button {
+	border: none;
+	background-color: transparent;
+	padding: 0;
+}
+
+.portraits {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(6, 1fr);
+	column-gap: 5%;
+	row-gap: 2%;
+	margin-bottom: 6em;
+}
+
+.red {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+	color: var(--background-article);
+	background-color: red;
+	padding: 0;
+}
+
+.reduceMotion {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+	color: var(--detail-color);
+	background-color: black;
+	/* gives the div a border at the bottom */
+	border-bottom: 2px solid transparent;
+	border-image: linear-gradient(to right, #000 0%, var(--detail-color) 50%, #000 100%);
+	border-image-slice: 1;
+	padding: 0;
+}
+
+.ruler {
+	background-image: url("../images/zelda_site_home/hyrule_rule.png");
+	background-position-x: center;
+	background-position-y: bottom;
+	height: 5.4em;
+	width: 100%;
+	position: relative;
+	z-index: 5;
+	transform: translate(0, 3em);
+	margin-bottom: 4em;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	z-index: 20;
+}
+
+.sticky2 {
+	position: fixed;
+	top: 5%;
+	z-index: 20;
+}
+
+.symbol {
+	width: 100%;
+	animation-name: slideIn;
+	animation-duration: 2s;
+}
+
+.theLegend {
+	font-family: var(--main-font);
+	color: var(--primary-text-colour);
+	font-size: 1.5em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.triforce {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.triforceBearers {
+	width: 100%;
+	margin-top: 30em;
+}
+
+.triforceBearers p {
+	animation-name: fadeIn;
+	animation-duration: 2s;
+}
+
+.triforceDown {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+}
+
+.up {
+	position: absolute;
+	top: 75%;
+}
+
+.uppercase {
+	text-transform: uppercase;
+	font-size: 1.125rem;
+}
+
+.video {
+	width: 100%;
+	border: 2px var(--detail-color) solid;
+}
+
+.videoSection {
+	padding: 1em;
+	font-family: var(--main-font);
+	color: var(--primary-text-colour);
+	font-size: 1.125rem;
+	background-color: rgba(0, 0, 0, 0.2);
+	animation-name: fadeIn;
+	animation-duration: 2s;
+}
+
+.windButton {
+	font-family: var(--main-font);
+	color: var(--primary-text-colour);
+	padding: 0 1em;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+}
+
+.windButton::after {
+	content: "";
+	background: url(../images/zeldaAbout/about_squigle_left.png);
+	width: 1.8em;
+	height: 1.2em;
+	position: absolute;
+	transform: scaleX(-1);
+}
+
+.windButton::before {
+	content: "";
+	background: url(../images/zeldaAbout/about_squigle_left.png);
+	width: 1.8em;
+	height: 1.2em;
+	position: absolute;
+	transform: translateX(-1.8em);
+}
+
+.zelda {
+	display: block;
+	position: absolute;
+	right: 0;
+	z-index: 2;
+	width: 70%;
+	animation-name: slideIn;
+	animation-duration: 2s;
+}
+
+
+/* ID's in order of html*/
 #wallpaperCard {
 	background-color: #e2d267;
 	color: var(--button-text);
@@ -800,6 +838,57 @@ a{
 #holidayCard {
 	background-color: #780000;
 	color: var(--primary-text-colour);
+}
+
+/* animations */
+@keyframes boing {
+	0% {
+		transform: scale(0);
+	}
+
+	33% {
+		transform: scale(0.8);
+	}
+
+	66% {
+		transform: scale(0.7);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateX(-100%);
+	}
+
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes slideOut {
+	0% {
+		transform: translateX(100%);
+	}
+
+	100% {
+		transform: translateX(0%);
+	}
 }
 
 @keyframes spinning {
