@@ -97,6 +97,7 @@ Home page:
 
   ### Stand van zaken
   De website die ik heb gekozen is niet divers genoeg qua content. Ik heb overlegd met de leraar en we hebben samen een nieuwe website gekozen. Gelukkig was ik nog niet zo heel ver en ging er geen werk verloren.
+  Foto's van de vooruitgang heb ik tussendoor niet gemaakt. Om te voorkomen dat ik al mijn werk verlies vlak voor de deadline, heb ik ervoor gekozen om deze weg te laten.
 
   ### Verslag van meeting
   Nieuw doel: de zelda.nintendo.com website. Beide de home en About pagina, werken aan surface laag en js goed werkend krijgen.
@@ -119,6 +120,7 @@ Home page:
   ### Stand van zaken
   De code is op zich goed, ik maak veel gebruik van classes maar zolang dit goed te onderbouwen is maakt het niet uit.
   De header moet iets aangepast worden qua structuur, de hele sectie mag "nav" zijn ipv alleen de menubalk.
+  Foto's van de vooruitgang heb ik tussendoor niet gemaakt. Om te voorkomen dat ik al mijn werk verlies vlak voor de deadline, heb ik ervoor gekozen om deze weg te laten.
 
   ### Verslag van meeting
   Verdergaan met de HTML en CSS van de andere pagina, ik loop nog steeds achter.
@@ -139,7 +141,9 @@ Home page:
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Goed nieuw en slecht nieuws: de alt teksten die ik bij plaatjes heb geschreven is duidelijk en geeft goed aan dat er op iets geklikt kan worden. Het slechte nieuws: mijn narrator leest alles voor, maar als ik door de website heen tab. Dit kan aan mijn narrator liggen, want bij de vorige test skipte de narrator ook heel veel. De WCAG volgt Nintendo vaak niet, zo hebben bijna alle buttons dezelfde tekst en is er niet te onderscheiden welke knop wat doet. Ik heb mijn best gedaan om semantisch correcte HTML en CSS te schrijven, maar helaas pakt mijn narrator hier vrij weinig van op.
+
+  In de toekomst is het een idee om kleine aanpassingen te maken aan de buttons, links en tekst op de pagina. Ook ga ik voor een volgend experiment onderzoek doen naar echte screenreaders voor blinde mensen, in plaats van de standaard narrator die op mijn laptopje zit.
 
 </details>
 
@@ -154,6 +158,7 @@ Home page:
 
   ### Stand van zaken
   Kleine onduidelijkheden over aantal classes, maar op zich is het prima. Mijn HTML en CSS zien er netjes uit, nu verder met de JS om de pagina "werkend" te krijgen. Ik heb hiervoor al een aantal ideeën, dus dit zal niet al te lang moeten duren.
+  Foto's van de vooruitgang heb ik tussendoor niet gemaakt. Om te voorkomen dat ik al mijn werk verlies vlak voor de deadline, heb ik ervoor gekozen om deze weg te laten.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -194,7 +199,7 @@ Home page:
 Mijn surface plane onderwerpen:
 - animaties
 - svg's
-- scroll javascript dinges
+- on scroll javascript sticky header
 - custom properties
 - DOM manipulatie (::before & ::after)
 - Advanced positioning, sticky, fixed z-index
@@ -225,6 +230,6 @@ Daarnaast was het heel leerzaam om per blok te kijken welke manier van weergeven
 
   1. zelda.nintendo.com voor alle assets, kleuren, stijlen en vormgeving.
   2. [https://css-tricks.com/almanac/](https://css-tricks.com/almanac/selectors/a/after-and-before/)https://css-tricks.com/almanac/selectors/a/after-and-before/ Voor de hulp bij de ::before en ::after tags in de code en andere snelle vragen.
-  3. https://stackoverflow.com/ voor specifieke vragen en oplossingen op mijn problemen.
+  3. https://stackoverflow.com/ voor specifieke vragen en oplossingen voor mijn problemen.
 
 </details>
